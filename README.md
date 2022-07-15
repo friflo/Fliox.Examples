@@ -79,7 +79,7 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | Custom database commands / handler        | `TaskHandler`         |   ✓    |   ✅   | ASP.NET routes |
 
  ✓     *supported*  
-✅   *implemented*  
+✅   *supported & integrated*  
 (1)    *integral feature*  
 
 
@@ -97,6 +97,8 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | SQL Server                   |             |     ✓       |
 | Oracle DB                    |             |   Oracle    |
 | DB2                          |             |    IBM      |
+
+ ✓     *maintainer support*  
 
 
 
