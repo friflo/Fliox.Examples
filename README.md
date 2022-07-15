@@ -50,36 +50,54 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 7 dlls 900 KB  **GraphQLParser** 300kb  **Bogus** 2.4MB |
 
 
-# Features
+# Features comparison
 
 Comparison of features enabled / used in each Hub example.
 
 *Info:*  The **keywords** in the **🔎 Search** column can be used to find the source a feature is enabled.  
 Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or `/`
 
-| feature                                   | 🔎 Search            | TodoHub | DemoHub |
-|-------------------------------------------|-----------------------|:-------:|:------:|
-| ORM - C# .NET                             | `FlioxClient`         |   ✅   |   ✅   |
-| Hub - HttpListener integration            | `HttpListenerHost`    |   ✅   |   ✅   |
-| Hub - ASP.NET Core integration            | `ExecuteFlioxRequest` |   ✕    |   ✅   |
-| Hub Explorer - require `cluster` DB       | `HubExplorer`         |   ✅   |   ✅   |
-| Batch API - HTTP & WebSocket              | (1)                   |   ✅   |   ✅   |
-| REST / OpenAPI                            | (1)                   |   ✅   |   ✅   |
-| GraphQL API                               | `GraphQLHandler`      |   ✕    |   ✅   |
-| `cluster` DB - info of hosted databases   | `ClusterDB`           |   ✅   |   ✅   |
-| `monitor` DB - request / task monitoring  | `MonitorDB`           |   ✕    |   ✅   |
-| `user_db` DB - user / task authorization  | `UserAuthenticator`   |   ✕    |   ✅   |
-| Pub-Sub - subscribe DB changes / commands | `EventDispatcher`     |   ✕    |   ✅   |
-| `main_db` database schema                 | `DatabaseSchema`      |   ✅   |   ✅   |
-| Code generation TS, C#, HTML, Kotlin, ... | (1)                   |   ✅   |   ✅   |
-| Database storage `file-system`            | `FileDatabase`        |   ✅   |   ✅   |
-| Database storage `in-memory`              | `MemoryDatabase`      |   ✕    |   ✅   |
-| Seed database `main_db`                   | `SeedDatabase`        |   ✕    |   ✅   |
-| Database containers                       | `EntitySet`           |   1     |   5    |
-| Container relations                       | `Relation`            |   ✕    |   ✅   |
-| Custom database commands / handler        | `TaskHandler`         |   ✕    |   ✅   |
+| feature                                   | 🔎 Search            | TodoHub | DemoHub |    EF Core    |
+|-------------------------------------------|-----------------------|:------:|:------:|:-------------:|
+| ORM - C# .NET                             | `FlioxClient`         |   ✅   |   ✅   |       ✓       |
+| ORM LINQ                                  |                       |   ✅   |   ✅   |       ✓       |
+| Hub - HttpListener integration            | `HttpListenerHost`    |   ✅   |   ✅   |               |
+| Hub - ASP.NET Core integration            | `ExecuteFlioxRequest` |   ✓    |   ✅   |               |
+| Hub Explorer - require `cluster` DB       | `HubExplorer`         |   ✅   |   ✅   |               |
+| Batch API - HTTP & WebSocket              | (1)                   |   ✅   |   ✅   |               |
+| REST / OpenAPI                            | (1)                   |   ✅   |   ✅   |  Swashbuckle  |
+| GraphQL API                               | `GraphQLHandler`      |   ✓    |   ✅   | Hot Chocolate |
+| `cluster` DB - info of hosted databases   | `ClusterDB`           |   ✅   |   ✅   |               |
+| `monitor` DB - request / task monitoring  | `MonitorDB`           |   ✓    |   ✅   |               |
+| `user_db` DB - user / task authorization  | `UserAuthenticator`   |   ✓    |   ✅   |               |
+| Pub-Sub - subscribe DB changes / commands | `EventDispatcher`     |   ✓    |   ✅   |    SignalR    |
+| `main_db` database schema                 | `DatabaseSchema`      |   ✅   |   ✅   |       ✓       |
+| Code generation TS, C#, HTML, Kotlin, ... | (1)                   |   ✅   |   ✅   |               |
+| Seed database `main_db`                   | `SeedDatabase`        |   ✓    |   ✅   |       ✓       |
+| Database containers                       | `EntitySet`           |   1    |   5    |        n       |
+| Container relations                       | `Relation`            |   ✓    |   ✅   |       ✓       |
+| Custom database commands / handler        | `TaskHandler`         |   ✓    |   ✅   | ASP.NET routes |
 
-**(1)** *integral feature of Client & Hub*
+ ✓     *supported*  
+✅   *implemented*  
+(1)    *integral feature*  
+
+
+# DB provider comparison
+
+| provider / adapter           |    Fliox    |   EF Core   |
+|------------------------------|:-----------:|:-----------:|
+| `in-memory`                  |      ✓      |     ✓       |
+| `file-system` JSON files     |      ✓      |             |
+| SQLite                       |             |     ✓       |
+| MariaDB                      |             |   Pomelo    |
+| MySQL                        |             |   Oracle    |
+| PostgreSQL                   |             |   Npgsql    |
+| Cosmos DB                    |      ✓      |     ✓      |
+| SQL Server                   |             |     ✓       |
+| Oracle DB                    |             |   Oracle    |
+| DB2                          |             |    IBM      |
+
 
 
 # Build

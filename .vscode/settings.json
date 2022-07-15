@@ -19,7 +19,10 @@
         "demohub",
         "DTO",
         "GraphiQL",
+        "LINQ",
+        "Npgsql",
         "Randomizer",
+        "Swashbuckle",
         "todohub",
         "Ullrich"
     ],
