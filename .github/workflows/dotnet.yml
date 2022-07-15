@@ -1,0 +1,31 @@
+name: .NET 6
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+#   permissions:
+#     contents: read
+#     packages: read
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET 6.0
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      env:
+        GITHUB_PACKAGE_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
+      run: |
+        dotnet restore
+    - name: Build
+      run: |
+        dotnet build --no-restore --framework net6.0
+    - name: Test
+      run: dotnet test --no-build -l "console;verbosity=detailed"
