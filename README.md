@@ -101,7 +101,23 @@ run a Hub as an HTTP server from its folder - e.g. in `./Demo/Hub`
 ```console
 dotnet run
 ```
+The server will start with logs like
+<div style="background-color: #d0e0ff;">
 
+```console
+info:  add extension db: cluster (in-memory)
+info:  add extension db: monitor (in-memory)
+info:  add extension db: user_db (file-system)
+info:  create HttpHost db: main_db (in-memory)
+info:
+      ____   _   _
+     |  __| | | |_|  ____  __  __
+     |  _|  | | | | | __ | \ \/ /
+     |_|    |_| |_| |____| /_/\_\  v0.0.4     
+
+info:  Listening for connections on: http://+:8010/
+```
+</div>
 
 # License
 
