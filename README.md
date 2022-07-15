@@ -92,7 +92,8 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | provider / adapter           |    Fliox    |   EF Core   |
 |------------------------------|:-----------:|:-----------:|
 | `in-memory`                  |      ✓      |     ✓       |
-| `file-system` JSON files     |      ✓      |             |
+| `file-system` - JSON files   |      ✓      |             |
+| `remote` - HTTP & Websocket  |      ✓      |             |
 | SQLite                       |             |     ✓       |
 | MariaDB                      |             |   Pomelo    |
 | MySQL                        |             |   Oracle    |
