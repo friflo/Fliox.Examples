@@ -102,7 +102,7 @@ run a Hub as an HTTP server from its folder - e.g. in `./Demo/Hub`
 dotnet run
 ```
 The server will start with logs like
-<div style="background-color: #d0e0ff;">
+<div style="background-color: #0000ff20;">
 
 ```console
 info:  add extension db: cluster (in-memory)
