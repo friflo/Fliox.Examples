@@ -148,5 +148,4 @@ info:  Listening for connections on: http://+:8010/
 
 This demo project is licensed under MIT.
 
-friflo JSON Fliox  
 Copyright © 2022 Ullrich Praetz
