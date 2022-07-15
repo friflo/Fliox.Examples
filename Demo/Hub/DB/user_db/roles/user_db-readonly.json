@@ -1,0 +1,19 @@
+{
+    "id": "user_db-readonly",
+    "description": "Allow readonly access to user_db: permissions & roles",
+    "rights": [
+        {
+            "type": "operation",
+            "database": "user_db",
+            "containers": [
+                { "name": "permissions", "operations": ["read", "query"] },
+                { "name": "roles",       "operations": ["read", "query"] }
+            ]
+        },
+        {
+            "type":     "sendMessage",
+            "database": "user_db",
+            "names":    ["std.*"]
+        }
+    ]
+}

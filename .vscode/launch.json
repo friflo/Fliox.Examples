@@ -1,0 +1,69 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DemoHub",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Demo/Hub/bin/Debug/net6.0/DemoHub.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Demo/Hub",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": "DemoTest",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Demo/Test/bin/Debug/net6.0/DemoTest.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Demo/Test",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": "TodoHub",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Todo/Hub/bin/Debug/net6.0/TodoHub.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Todo/Hub",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": "TodoTest",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Todo/Test/bin/Debug/net6.0/TodoTest.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Todo/Test",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

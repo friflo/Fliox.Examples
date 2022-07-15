@@ -1,0 +1,31 @@
+{
+    "files.exclude": {
+        "docs": true,
+        ".gitignore": true,
+		"**/obj": true,
+		"**/bin": true,
+        "**/.github": true,
+        "**/.vs": true,
+        "**/.vscode": true,
+        "**/.run": true,
+        "**/.idea": true,
+        "**/*.user": true,
+        "**/*.csproj": true,
+        "**/*.DotSettings": true,
+    },
+    "cSpell.words": [
+        "bchavez",
+        "cref",
+        "demohub",
+        "DTO",
+        "GraphiQL",
+        "Randomizer",
+        "todohub",
+        "Ullrich"
+    ],
+    "csharp.unitTestDebuggingOptions": {
+        "logging": {
+            "moduleLoad": false
+        }
+    },
+}
