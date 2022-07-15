@@ -11,26 +11,13 @@ The examples have a different set of features. Their features are listed [below]
 This guides how to add a new or remove an existing features in an application.
 
 Examples
-- [**TodoHub**](#todohub) - a *minimal* example
-- [**DemoHub**](#demohub) - a *common* example
+- [**DemoHub**](#demohub) - *common* example
+- [**TodoHub**](#todohub) - *minimal* example
 
 Each examples contains a `Client`, a `Hub` and a `Test` project.  
 
 Build, Test and Run instructions [below](#build)
 
-## **TodoHub**
-📄   [README.md](Todo/Hub/README.md)
-
-Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **TodoHub** supports:  
-[Hub Explorer](https://github.com/friflo/Friflo.Json.Fliox#explorer), [ORM Client](https://github.com/friflo/Friflo.Json.Fliox#client),
-HttpListener hosting, **REST / OpenAPI**, Batch API, database schema & code generation.  
-
-The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete and query records in the container `jobs`.  
-
-|              | `Client`                     | `Hub`                        |
-|--------------|------------------------------|------------------------------|
-| C#           | 1 file - LOC 30              | 1 file - LOC 40              |
-| dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 5 dlls 855 KB |
 
 
 ## **DemoHub**
@@ -48,6 +35,23 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 |--------------|------------------------------|------------------------------------------------------------------------|
 | C#           | 2 files - LOC 130            | 4 files - LOC bootstrap 80, ASP.NET Core 70, domain examples 280       |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 7 dlls 900 KB  **GraphQLParser** 300kb  **Bogus** 2.4MB |
+
+
+
+## **TodoHub**
+📄   [README.md](Todo/Hub/README.md)
+
+Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **TodoHub** supports:  
+[Hub Explorer](https://github.com/friflo/Friflo.Json.Fliox#explorer), [ORM Client](https://github.com/friflo/Friflo.Json.Fliox#client),
+HttpListener hosting, **REST / OpenAPI**, Batch API, database schema & code generation.  
+
+The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete and query records in the container `jobs`.  
+
+|              | `Client`                     | `Hub`                        |
+|--------------|------------------------------|------------------------------|
+| C#           | 1 file - LOC 30              | 1 file - LOC 40              |
+| dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 5 dlls 855 KB |
+
 
 
 # Features comparison
