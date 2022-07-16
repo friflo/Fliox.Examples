@@ -2,6 +2,7 @@
     "files.exclude": {
         "docs": true,
         ".gitignore": true,
+        ".gitpod.yml": true,
 		"**/obj": true,
 		"**/bin": true,
         "**/.github": false,
