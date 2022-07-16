@@ -134,11 +134,11 @@ info:  add extension db: cluster (in-memory)
 info:  add extension db: monitor (in-memory)
 info:  add extension db: user_db (file-system)
 info:  create HttpHost db: main_db (in-memory)
-info:  HttpHost
+info:  DemoHub · dev
     ____   _   _
    |  __| | | |_|  ____  __  __
    |  _|  | | | | | __ | \ \/ /
-   |_|    |_| |_| |____| /_/\_\  v0.0.4 - 2022   
+   |_|    |_| |_| |____| /_/\_\  v0.0.8 - 2022
 
 info:  Listening for connections on: http://+:8010/
 ```
