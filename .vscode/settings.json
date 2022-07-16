@@ -12,6 +12,7 @@
         "**/*.user": true,
         "**/*.csproj": true,
         "**/*.DotSettings": true,
+        "**/appsettings.json": true,
     },
     "cSpell.words": [
         "bchavez",
