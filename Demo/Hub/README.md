@@ -62,9 +62,9 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 
 ## DemoHub files
 
-| file                                   | description                                                                   |
-|----------------------------------------|-------------------------------------------------------------------------------|
-| [FakeUtils.cs](FakeUtils.cs)           | utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records    |
-| [MessageHandler.cs](MessageHandler.cs) | implement DemoHub API (database commands) by utilizing **DemoClient** clients |
-| [Program.cs](Program.cs)               | bootstrapping & configuration of host                                         |
-| [Startup.cs](Startup.cs)               | **ASP.NET Core** configuration and host integration                           |
+| file                                   | description                                                                     |
+|----------------------------------------|---------------------------------------------------------------------------------|
+| [FakeUtils.cs](FakeUtils.cs)           | utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records      |
+| [MessageHandler.cs](MessageHandler.cs) | implement DemoHub API (database commands) by utilizing **DemoClient** instances |
+| [Program.cs](Program.cs)               | bootstrapping & configuration of host                                           |
+| [Startup.cs](Startup.cs)               | **ASP.NET Core** configuration and host integration                             |
