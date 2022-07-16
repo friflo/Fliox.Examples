@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/FlioxHub.Demos.sln",
+                "${workspaceFolder}/Demos.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "test",
-                "${workspaceFolder}/FlioxHub.Demos.sln",
+                "${workspaceFolder}/Demos.sln",
                 "-l",
                 "console;verbosity=detailed"
             ],
@@ -31,7 +31,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/FlioxHub.Demos.sln",
+                "${workspaceFolder}/Demos.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -43,7 +43,7 @@
             "type": "process",
             "args": [
                 "clean",
-                "${workspaceFolder}/FlioxHub.Demos.sln",
+                "${workspaceFolder}/Demos.sln",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
