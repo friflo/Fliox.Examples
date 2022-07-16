@@ -23,7 +23,7 @@ This enables running the server **without** any configuration or installation of
 
 ## DemoClient
 
-The key class when running a HTTP server using **JSON Fliox Hub** is [**DemoClient.cs**](Client/DemoClient.cs).  
+The key class when running a HTTP server using **JSON Fliox Hub** is [**DemoClient.cs**](DemoClient.cs).  
 This class provide two fundamental functionalities:
 1. It is a **database client** providing type-safe access to its containers, commands and messages
 2. It defines a **database schema** by declaring its containers, commands and messages.  
@@ -56,15 +56,15 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 
 | file                                                   | description                                                     |
 |--------------------------------------------------------|-----------------------------------------------------------------|
-| [DemoClient.cs](Client/DemoClient.cs)               | 1. is a database client <br/> 2. is a database schema for a Hub |
-| [DemoClient.Models.cs](Client/DemoClient.Models.cs) | contain entity types & command models (DTO's)                   |
+| [DemoClient.cs](DemoClient.cs)               | 1. is a database client <br/> 2. is a database schema for a Hub |
+| [DemoClient.Models.cs](DemoClient.Models.cs) | contain entity types & command models (DTO's)                   |
 
 
 ## DemoHub files
 
 | file                                   | description                                                                     |
 |----------------------------------------|---------------------------------------------------------------------------------|
-| [FakeUtils.cs](Hub/FakeUtils.cs)           | utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records      |
-| [MessageHandler.cs](Hub/MessageHandler.cs) | implement DemoHub API (database commands) by utilizing **DemoClient** instances |
-| [Program.cs](Hub/Program.cs)               | bootstrapping & configuration of host                                           |
-| [Startup.cs](Hub/Startup.cs)               | **ASP.NET Core** configuration and host integration                             |
+| [FakeUtils.cs](../Hub/FakeUtils.cs)           | utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records      |
+| [MessageHandler.cs](../Hub/MessageHandler.cs) | implement DemoHub API (database commands) by utilizing **DemoClient** instances |
+| [Program.cs](../Hub/Program.cs)               | bootstrapping & configuration of host                                           |
+| [Startup.cs](../Hub/Startup.cs)               | **ASP.NET Core** configuration and host integration                             |

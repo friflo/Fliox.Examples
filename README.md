@@ -21,7 +21,7 @@ Build, Test and Run instructions [below](#build)
 
 
 ## **DemoHub**
-📄   [README.md](Demo/README.md)
+📄   [README.md](Demo/Client/README.md)
 
 Contains a *common* `Client`, a *common* `Hub` and unit tests. Additional to **TodoHub** the Hub supports:  
 **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container relations and custom commands.  
@@ -39,7 +39,7 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 
 
 ## **TodoHub**
-📄   [README.md](Todo/README.md)
+📄   [README.md](Todo/Client/README.md)
 
 Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **TodoHub** supports:  
 [Hub Explorer](https://github.com/friflo/Friflo.Json.Fliox#explorer), [ORM Client](https://github.com/friflo/Friflo.Json.Fliox#client),
