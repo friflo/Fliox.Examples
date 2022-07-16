@@ -17,9 +17,9 @@
 	
     <ItemGroup>
       <PackageReference Include="Bogus" Version="34.0.1" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="0.0.7" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.0.7" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.GraphQL" Version="0.0.7" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="0.0.8" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.0.8" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.GraphQL" Version="0.0.8" />
     </ItemGroup>
 	
     <ItemGroup>
