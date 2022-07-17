@@ -15,7 +15,8 @@ namespace TodoTest {
             var client  = new TodoClient(hub);
             var jobs    = client.jobs.QueryAll();
             await client.SyncTasks();
-                
+
+            Console.WriteLine($"\n--- jobs:");
             foreach (var job in jobs.Result) {
                 Console.WriteLine($"id: {job.id}, title: {job.title}, completed: {job.completed}");
             }
@@ -30,10 +31,11 @@ namespace TodoTest {
                     wsHub.Connect().Wait();
                     return wsHub;
                 case "file":
-                    var db = new FileDatabase("main_db", "./DB/main_db");
-                    return new FlioxHub(db);
+                    return new FlioxHub(new FileDatabase("main_db", "./DB/main_db"));
+                case "memory":
+                    return new FlioxHub(new MemoryDatabase("main_db"));
             }
-            throw new InvalidOperationException($"unknown option: '{option}' use: [http, ws, file]");
+            throw new InvalidOperationException($"unknown option: '{option}' use: [http, ws, file, memory]");
         }
     }
 }
