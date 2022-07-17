@@ -10,7 +10,8 @@ namespace DemoTest {
     internal static class Trial
     {
         // custom entry point called by: dotnet run
-        internal static async Task Main(string[] args) {
+        internal static async Task Main(string[] args)
+        {
             var option      = args.FirstOrDefault() ?? "http";
             var hub         = CreateHub(option);
             var client      = new DemoClient(hub) { UserId = "admin", Token = "admin" };
@@ -28,7 +29,8 @@ namespace DemoTest {
             }
         }
             
-        private static FlioxHub CreateHub(string option) {
+        private static FlioxHub CreateHub(string option)
+        {
             switch (option) {
                 case "http":
                     return new HttpClientHub("main_db", "http://localhost:8010/fliox/");
