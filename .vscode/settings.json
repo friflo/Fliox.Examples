@@ -26,7 +26,8 @@
         "Randomizer",
         "Swashbuckle",
         "todohub",
-        "Ullrich"
+        "Ullrich",
+        "Unicodes"
     ],
     "csharp.unitTestDebuggingOptions": {
         "logging": {
