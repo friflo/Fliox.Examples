@@ -33,4 +33,5 @@
             "moduleLoad": false
         }
     },
+    "explorer.compactFolders": false,
 }
