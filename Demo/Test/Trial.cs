@@ -7,8 +7,9 @@ using Friflo.Json.Fliox.Hub.Remote;
 
 namespace DemoTest {
 
-    internal static class Program
+    internal static class Trial
     {
+        // custom entry point called by: dotnet run
         internal static async Task Main(string[] args) {
             var option      = args.FirstOrDefault() ?? "http";
             var hub         = CreateHub(option);
