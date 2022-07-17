@@ -140,7 +140,7 @@ info:  DemoHub · dev - v1.0.0
    |  _|  | | | | | __ | \ \/ /
    |_|    |_| |_| |____| /_/\_\  v0.0.8 - 2022
 
-info:  Listening for connections on: http://+:8010/
+explorer: http://localhost:8010/fliox/
 ```
 </div>
 
