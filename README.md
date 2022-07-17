@@ -140,7 +140,7 @@ info:  DemoHub · dev - v1.0.0
    |  _|  | | | | | __ | \ \/ /
    |_|    |_| |_| |____| /_/\_\  v0.0.8 - 2022
 
-explorer: http://localhost:8010/fliox/
+Hub Explorer - http://localhost:8010/fliox/
 ```
 </div>
 
