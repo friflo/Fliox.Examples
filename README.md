@@ -59,7 +59,7 @@ The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, del
 
 
 
-# Features comparison
+# Features
 
 Comparison of features enabled / used in each Hub example.
 
@@ -92,7 +92,7 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 (1)    *integral feature*  
 
 
-# DB provider comparison
+# Database provider
 
 | provider / adapter           |    Fliox    |   EF Core   |
 |------------------------------|:-----------:|:-----------:|
