@@ -10,11 +10,10 @@ This project contains two **ready to run** examples showing how to create and us
 The examples have a different set of features. Their features are listed [below](#features).  
 This guides how to add a new or remove an existing features in an application.
 
-Examples
 - [**DemoHub**](#demohub) - *common* example
 - [**TodoHub**](#todohub) - *minimal* example
 
-Each example contains three C# projects
+Each example contains three folders / C# projects
 
 | folder   | project type      | description               | run command                                               |
 |----------|-------------------|---------------------------|-----------------------------------------------------------|
