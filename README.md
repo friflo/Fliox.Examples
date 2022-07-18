@@ -18,7 +18,7 @@ Each example contains three C# projects
 
 | folder   | project type      | description               | run command                                               |
 |----------|-------------------|---------------------------|-----------------------------------------------------------|
-| `Client` | .NET library      | database client & schema  |                                                           |
+| `Client` | .NET library      | database client / schema  |                                                           |
 | `Hub`    | .NET HTTP server  | database Hub              | `dotnet run`                                              |
 | `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, ws, file, memory]` |
 
