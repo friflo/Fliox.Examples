@@ -35,4 +35,7 @@
         }
     },
     "explorer.compactFolders": false,
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    }
 }
