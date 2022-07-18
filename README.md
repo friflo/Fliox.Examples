@@ -16,11 +16,11 @@ Examples
 
 Each example contains three C# projects
 
-| folder   | project type      | description                |
-|----------|-------------------|----------------------------|
-| `Client` | .NET library      | database client & schema   |
-| `Hub`    | .NET HTTP server  | Fliox database Hub         |
-| `Test`   | NUnit tests       | to show how to use clients |
+| folder   | project type      | description              | run command                                           |
+|----------|-------------------|--------------------------|-------------------------------------------------------|
+| `Client` | .NET library      | database client & schema |                                                       |
+| `Hub`    | .NET HTTP server  | database Hub             | `dotnet run`                                          |
+| `Test`   | NUnit tests       | client examples          | `dotnet test` / `dotnet run [http, ws, file, memory]` |
 
 Build, Test and Run instructions [below](#build)
 
