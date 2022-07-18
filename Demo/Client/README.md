@@ -54,10 +54,10 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 
 ## Demo files
 
-| file                              | description                                                     |
-|-----------------------------------|-----------------------------------------------------------------|
-| [DemoClient.cs](DemoClient.cs)    | 1. is a database client <br/> 2. is a database schema for a Hub |
-| [DemoClient.Models.cs](Models.cs) | contain entity types & command models (DTO's)                   |
+| file                           | description                                                     |
+|--------------------------------|-----------------------------------------------------------------|
+| [DemoClient.cs](DemoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
+| [Models.cs](Models.cs)         | contain entity types & command models (DTO's)                   |
 
 
 ## DemoHub files
