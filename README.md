@@ -14,7 +14,13 @@ Examples
 - [**DemoHub**](#demohub) - *common* example
 - [**TodoHub**](#todohub) - *minimal* example
 
-Each examples contains a `Client`, a `Hub` and a `Test` project.  
+Each example contains three C# projects
+
+| folder   | project type      | description                |
+|----------|-------------------|----------------------------|
+| `Client` | .NET library      | database client & schema   |
+| `Hub`    | .NET HTTP server  | Fliox database Hub         |
+| `Test`   | NUnit tests       | to show how to use clients |
 
 Build, Test and Run instructions [below](#build)
 
