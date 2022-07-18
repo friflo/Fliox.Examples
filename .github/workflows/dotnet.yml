@@ -26,6 +26,6 @@ jobs:
         dotnet restore
     - name: Build
       run: |
-        dotnet build --no-restore --framework net6.0
+        dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build -l "console;verbosity=detailed"
