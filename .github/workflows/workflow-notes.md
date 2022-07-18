@@ -2,6 +2,8 @@
 
 # 2022-07-16  Build error:
 
+https://github.com/friflo/FlioxHub.Demos/runs/7372704105
+
 This and 11 previous builds failed for the same reason:
 
 ```
@@ -12,7 +14,8 @@ Demo -> /home/runner/work/FlioxHub.Demos/FlioxHub.Demos/Demo/Client/bin/Debug/ne
 Build FAILED.
 ```
 
-Similar to: https://github.com/dotnet/sdk/issues/2902#issuecomment-460742123
+Similar to:
+[GenerateDepsFile: The process cannot access the file '...\MyProject.deps.json' because it is being used by another process.](https://github.com/dotnet/sdk/issues/2902#issuecomment-460742123)
 
 ## Solution
 
