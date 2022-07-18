@@ -14,6 +14,8 @@
         "**/*.csproj": true,
         "**/*.DotSettings": true,
         "**/appsettings.json": true,
+        "Demo/Client/README.md": true,
+        "Todo/Client/README.md": true,
     },
     "cSpell.words": [
         "bchavez",
