@@ -1,0 +1,16 @@
+{
+  "name": "fliox.hub-demos",
+  "version": "1.0.0",
+  "author": "Ullrich Praetz",
+  "scripts": {
+    "markdown:check": "ts-node ./scripts/check-markdown.ts",
+    "markdown:links": "ts-node ./scripts/check-markdown.ts --links"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "mdast-util-from-markdown": "1.2.0",
+    "ts-node": "10.8.1"
+  },
+  "dependencies": {}
+}
