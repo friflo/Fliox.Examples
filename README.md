@@ -18,8 +18,12 @@ Each example contains three folders / C# projects
 | folder   | project type      | description               | run command                                               |
 |----------|-------------------|---------------------------|-----------------------------------------------------------|
 | `Client` | .NET library      | database client / schema  |                                                           |
-| `Hub`    | .NET HTTP server  | database Hub              | `dotnet run`                                              |
+| `Hub`    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                              |
 | `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, ws, file, memory]` |
+
+
+The examples in `Client` & `Test` shows how to use the API of a [**FlioxClient**](https://github.com/friflo/FlioxHub.Docs/blob/master/api/FlioxClient.md)  
+Bootstrapping of a `Hub` demonstrates how to use the API of a   [**FlioxHub**](https://github.com/friflo/FlioxHub.Docs/blob/master/api/FlioxHub.md)  
 
 Build, Test and Run instructions [below](#build)
 
