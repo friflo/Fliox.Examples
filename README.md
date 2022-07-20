@@ -49,7 +49,8 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 📄   [README.md](Todo/Client/README.md)
 
 Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **TodoHub** supports:  
-[**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox#explorer), [**ORM Client**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub/Client/README.md),
+[**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
+[**ORM Client**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub/Client/README.md),
 HttpListener hosting, **REST / OpenAPI**, Batch API, **database schema** & code generation.  
 
 The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete and query records in the container `jobs`.  
