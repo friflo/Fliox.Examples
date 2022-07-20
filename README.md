@@ -15,11 +15,11 @@ This guides how to add a new or remove an existing features in an application.
 
 Each example contains three folders / C# projects
 
-| folder   | project type      | description               | run command                                               |
-|----------|-------------------|---------------------------|-----------------------------------------------------------|
-| `Client` | .NET library      | database client / schema  |                                                           |
-| `Hub`    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                              |
-| `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, ws, file, memory]` |
+| folder   | project type      | description               | run command                                           |
+|----------|-------------------|---------------------------|-------------------------------------------------------|
+| `Client` | .NET library      | database client / schema  |                                                       |
+| `Hub`    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                          |
+| `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, file, memory]` |
 
 The **API**'s used by the examples is available at [**fliox-docs**](https://github.com/friflo/fliox-docs)
 
