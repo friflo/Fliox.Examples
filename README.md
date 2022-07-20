@@ -5,10 +5,10 @@
 [![.NET Tests](https://github.com/friflo/FlioxHub.Demos/workflows/.NET/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
 
 This project contains two **ready to run** examples showing how to create and use
-[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox) Clients & Hubs.  
+[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox) **Clients** & **Hubs**.  
 
 The examples have a different set of features. Their features are listed [below](#features).  
-This guides how to add a new or remove an existing features in an application.
+The intention is to guide how to add a new or remove an existing features in an application.
 
 - [**DemoHub**](#demohub) - *common* example
 - [**TodoHub**](#todohub) - *minimal* example
@@ -21,7 +21,7 @@ Each example contains three folders / C# projects
 | `Hub`    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                          |
 | `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, file, memory]` |
 
-The **API**'s used by the examples is available at [**fliox-docs**](https://github.com/friflo/fliox-docs)
+The **API**'s used by the examples are available at [**fliox-docs**](https://github.com/friflo/fliox-docs)
 
 Build, Test and Run instructions [below](#build)
 
@@ -31,7 +31,7 @@ Build, Test and Run instructions [below](#build)
 📄   [README.md](Demo/Client/README.md)
 
 Contains a *common* `Client`, a *common* `Hub` and unit tests. Additional to **TodoHub** the Hub supports:  
-**ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container relations and custom commands.  
+**ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers
 and uses [GraphQLParser](https://github.com/graphql-dotnet/parser) to support GraphQL.
 
@@ -49,8 +49,8 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 📄   [README.md](Todo/Client/README.md)
 
 Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **TodoHub** supports:  
-[Hub Explorer](https://github.com/friflo/Friflo.Json.Fliox#explorer), [ORM Client](https://github.com/friflo/Friflo.Json.Fliox#client),
-HttpListener hosting, **REST / OpenAPI**, Batch API, database schema & code generation.  
+[**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox#explorer), [**ORM Client**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub/Client/README.md),
+HttpListener hosting, **REST / OpenAPI**, Batch API, **database schema** & code generation.  
 
 The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete and query records in the container `jobs`.  
 
