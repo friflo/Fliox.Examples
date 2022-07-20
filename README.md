@@ -72,7 +72,8 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | feature                                   | 🔎 Search            | TodoHub | DemoHub |    EF Core    |
 |-------------------------------------------|-----------------------|:------:|:------:|:-------------:|
 | ORM - C# .NET                             | `FlioxClient`         |   ✅   |   ✅   |       ✓       |
-| ORM LINQ                                  |                       |   ✅   |   ✅   |       ✓       |
+| Unit of Work - support                    | (1)                   |    ✓   |    ✓   |       ✓       |
+| ORM LINQ                                  | (1)                   |   ✅   |   ✅   |       ✓       |
 | Hub - HttpListener integration            | `HttpListenerHost`    |   ✅   |   ✅   |               |
 | Hub - ASP.NET Core integration            | `ExecuteFlioxRequest` |   ✓    |   ✅   |               |
 | Hub Explorer - require `cluster` DB       | `HubExplorer`         |   ✅   |   ✅   |               |
@@ -86,7 +87,7 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | `main_db` database schema                 | `DatabaseSchema`      |   ✅   |   ✅   |       ✓       |
 | Code generation TS, C#, HTML, Kotlin, ... | (1)                   |   ✅   |   ✅   |               |
 | Seed database `main_db`                   | `SeedDatabase`        |   ✓    |   ✅   |       ✓       |
-| Database containers                       | `EntitySet`           |   1    |   5    |        n       |
+| Database containers                       | `EntitySet`           |   1    |    5    |        n       |
 | Container relations                       | `Relation`            |   ✓    |   ✅   |       ✓       |
 | Custom database commands / handler        | `TaskHandler`         |   ✓    |   ✅   | ASP.NET routes |
 
