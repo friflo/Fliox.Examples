@@ -97,19 +97,20 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 
 # Database provider
 
-| provider / adapter           |    Fliox    |   EF Core   |
-|------------------------------|:-----------:|:-----------:|
-| `in-memory`                  |      ✓      |     ✓       |
-| `file-system` - JSON files   |      ✓      |             |
-| `remote` - HTTP & Websocket  |      ✓      |             |
-| SQLite                       |             |     ✓       |
-| MariaDB                      |             |   Pomelo    |
-| MySQL                        |             |   Oracle    |
-| PostgreSQL                   |             |   Npgsql    |
-| Cosmos DB                    |      ✓      |     ✓      |
-| SQL Server                   |             |     ✓       |
-| Oracle DB                    |             |   Oracle    |
-| DB2                          |             |    IBM      |
+| provider / adapter           |       Fliox        |       EF Core      |
+|------------------------------|:------------------:|:------------------:|
+| designed for database type   | NoSQL / Key-Value  |         SQL        |
+| `in-memory`                  |          ✓         |         ✓         |
+| `file-system` - JSON files   |          ✓         |                    |
+| `remote` - HTTP & Websocket  |          ✓         |                    |
+| SQLite                       |                    |         ✓          |
+| MariaDB                      |                    |       Pomelo       |
+| MySQL                        |                    |       Oracle       |
+| PostgreSQL                   |                    |       Npgsql       |
+| Cosmos DB                    |          ✓         |         ✓         |
+| SQL Server                   |                    |         ✓          |
+| Oracle DB                    |                    |       Oracle       |
+| DB2                          |                    |        IBM         |
 
  ✓     *maintainer support*  
 
