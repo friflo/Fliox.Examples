@@ -21,9 +21,7 @@ Each example contains three folders / C# projects
 | `Hub`    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                              |
 | `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, ws, file, memory]` |
 
-
-The examples in `Client` & `Test` shows how to use the API by a [**Client**](https://github.com/friflo/fliox-docs#client)  
-Bootstrapping of a `Hub` demonstrates how to use the API by a   [**Host**](https://github.com/friflo/fliox-docs#host)  
+The **API**'s used by the examples is available at [**fliox-docs**](https://github.com/friflo/fliox-docs)
 
 Build, Test and Run instructions [below](#build)
 
