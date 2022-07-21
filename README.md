@@ -2,7 +2,7 @@
 
 # ![logo](docs/images/Json-Fliox.svg)     **FlioxHub Demos**      ![SPLASH](docs/images/paint-splatter.svg)
 
-[![.NET Tests](https://github.com/friflo/FlioxHub.Demos/workflows/.NET/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
+[![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
 
 This project contains two **ready to run** examples showing how to create and use
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-jsonfliox-) **Clients** & **Hubs**.  
