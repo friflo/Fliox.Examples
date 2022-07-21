@@ -119,8 +119,9 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 
 # Build
 
-All examples targeting **.NET 6.0**.  
 The solution and its projects can be build, tested and executed via **Console**, **VSCode**, **Rider** & **Visual Studio 2022**.
+
+*Note*: In order to build and run the examples the [**.NET 6.0 SDK**](https://dotnet.microsoft.com/en-us/download) is required.
 
 build all examples from `./`
 ```
