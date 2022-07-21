@@ -12,10 +12,13 @@
    stroke-miterlimit="10"
    id="svg8378"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="welcome-JOSN-Fliox.svg"
+   sodipodi:docname="JSON Fliox.svg"
    width="2560"
    height="1440"
-   style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10">
+   style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+   inkscape:export-filename="G:\_dev\FlioxHub.Demos\docs\images\JSON Fliox.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <metadata
      id="metadata8429">
     <rdf:RDF>
@@ -126,8 +129,8 @@
      id="namedview8425"
      showgrid="false"
      inkscape:zoom="0.35312501"
-     inkscape:cx="1102.1772"
-     inkscape:cy="235.97845"
+     inkscape:cx="397.01042"
+     inkscape:cy="205.7528"
      inkscape:window-x="2551"
      inkscape:window-y="94"
      inkscape:window-maximized="1"
@@ -197,7 +200,7 @@
   </g>
   <g
      id="g8219"
-     transform="matrix(5.1687286,0,0,5.1687286,832.77338,612.36356)"
+     transform="matrix(5.1687286,0,0,5.1687286,832.77338,612.3636)"
      clip-path="url(#clipPath8190)">
     <g
        transform="matrix(0.24467438,0,0,0.28133956,-150.83903,-2.3119372)"
@@ -315,7 +318,7 @@
      width="2446.1599"
      height="488.40417"
      x="47.003132"
-     y="921.37018"
+     y="921.37012"
      rx="38.047466"
      ry="38.047466" />
   <text
