@@ -5,7 +5,7 @@
 [![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
 
 This project contains two **ready to run** examples showing how to create and use
-[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-jsonfliox-) **Clients** & **Hubs**.  
+[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/README.md) **Clients** & **Hubs**.  
 
 The examples have a different set of features. Their features are listed [below](#features).  
 The intention is to guide how to add a new or remove an existing features in an application.
