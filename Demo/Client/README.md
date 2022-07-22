@@ -1,6 +1,6 @@
 
 
-# ![logo](../../docs/images/Json-Fliox.svg)     **Fliox DemoHub**      ![SPLASH](../../docs/images/paint-splatter.svg)
+# ![logo](../../.docs/images/Json-Fliox.svg)     **Fliox DemoHub**      ![SPLASH](../../docs/images/paint-splatter.svg)
 
 
 
