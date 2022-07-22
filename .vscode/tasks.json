@@ -3,6 +3,7 @@
     "tasks": [
         {
             "label": "build",
+            "isBuildCommand": true,
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -15,6 +16,7 @@
         },
         {
             "label": "test",
+            "isTestCommand": true,
             "command": "dotnet",
             "type": "process",
             "args": [
