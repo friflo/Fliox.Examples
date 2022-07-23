@@ -159,7 +159,7 @@ Hub Explorer - http://localhost:8010/fliox/
 </div>
 
 ## Credits
-- [Nick Chapsas - YouTube](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg) · tried to adapted his style of screen Recording
+- [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg) · tried to adapted his style of screen Recording
 - [NUnit.org](https://nunit.org/) · used for unit testing of the Demos and the JSON Fliox library
 - [Bogus](https://github.com/bchavez/Bogus) · to create Fake data in the DemoHub
 - [Swagger](https://swagger.io/) · to enable REST / OpenAPI by the Hub Explorer
