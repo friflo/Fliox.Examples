@@ -34,7 +34,8 @@
         "Swashbuckle",
         "todohub",
         "Ullrich",
-        "Unicodes"
+        "Unicodes",
+        "Walkthrough"
     ],
     "csharp.unitTestDebuggingOptions": {
         "logging": {
