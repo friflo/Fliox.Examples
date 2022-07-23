@@ -36,6 +36,8 @@
         "todohub",
         "Ullrich",
         "Unicodes",
+        "upsert",
+        "upserts",
         "Walkthrough"
     ],
     "csharp.unitTestDebuggingOptions": {
