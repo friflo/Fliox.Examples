@@ -158,6 +158,9 @@ Hub Explorer - http://localhost:8010/fliox/
 ```
 </div>
 
+*Happy coding!*  
+😊 💻
+
 # License
 
 This demo project is licensed under MIT.
