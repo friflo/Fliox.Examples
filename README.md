@@ -25,6 +25,7 @@ The **API**'s used by the examples are available at [**JSON Fliox - API Referenc
 
 Build, Test and Run instructions [below](#build)
 
+[![DemoHub Walkthrough](json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "DemoHub Walkthrough")
 
 
 ## **DemoHub**
