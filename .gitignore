@@ -11,4 +11,5 @@ obj/
 /node_modules
 package-lock.json
 
-json-fliox-recording.png
+.docs/images/json-fliox-recording.png
+
