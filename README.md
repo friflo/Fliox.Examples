@@ -160,7 +160,7 @@ Hub Explorer - http://localhost:8010/fliox/
 
 ## Credits
 - [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg) · tried to adapted his style of screen Recording
-- [NUnit.org](https://nunit.org/) · used for unit testing of the Demos and the JSON Fliox library
+- [NUnit](https://nunit.org/) · used for unit testing of the Demos and the JSON Fliox library
 - [Bogus](https://github.com/bchavez/Bogus) · to create Fake data in the DemoHub
 - [Swagger](https://swagger.io/) · to enable REST / OpenAPI by the Hub Explorer
 - [GraphiQL](https://github.com/graphql/graphiql) · to enable GraphQL in the Hub Explorer
