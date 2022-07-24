@@ -9,7 +9,7 @@ This project contains two **ready to run** examples showing how to create and us
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/README.md) **Clients** & **Hubs**.  
 
 *In short*  
-**JSON Fliox** is a set of .NET NuGet packages supporting simple and efficient access to NoSQL databases via C# or Web clients.
+**JSON Fliox** is .NET library supporting simple and efficient access to NoSQL databases via C# or Web clients.
 
 
 ## Examples
