@@ -4,11 +4,15 @@
 
 [![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://github.com/friflo/FlioxHub.Demos)
-
 
 This project contains two **ready to run** examples showing how to create and use
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/README.md) **Clients** & **Hubs**.  
+
+*In short*  
+**JSON Fliox** is a set of .NET NuGet packages supporting simple and efficient access to NoSQL databases via C# or Web clients.
+
+
+## Examples
 
 The examples have a different set of features. Their features are listed [below](#features).  
 The intention is to guide how to add a new or remove an existing features in an application.
