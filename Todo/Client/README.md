@@ -6,11 +6,10 @@
 ## General
 
 The **Fliox TodoHub** is a Web server application to demonstrate the features of the
-[**JSON Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#fliox-hub) **.NET** library.  
-This library is an **ORM** used to create a **schema** for **NoSQL databases** (key-value or document) by
-declaring a set of model classes.  
-The classes define the types stored in each database container / table.
-*In short* - a **Code First** approach to define a database schema.
+[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#fliox-hub) **.NET** library.
+
+*In short*  
+**JSON Fliox** is .NET library supporting simple and efficient access to NoSQL databases via C# or Web clients.
 
 For a simple setup the server **is also the database** storing records (entities) in the **file-system**.  
 This enables running the server **without** any configuration or installation of a third party DBMS (database management system).
