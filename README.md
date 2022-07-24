@@ -15,14 +15,14 @@ This project contains two **ready to run** examples showing how to create and us
 ## Content
 
 - [Examples](#examples)
-- [DemoHub](#demohub)
-- [TodoHub](#todohub)
+    - [DemoHub](#demohub)
+    - [TodoHub](#todohub)
 - [Features](#features)
 - [Database provider](#database-provider)
 - [Build](#build)
 
 
-## Examples
+# Examples
 
 The examples have a different set of features. Their features are listed [below](#features).  
 The intention is to guide how to add a new or remove an existing features in an application.
