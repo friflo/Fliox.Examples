@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "author": "Ullrich Praetz",
   "scripts": {
-    "markdown:check": "ts-node ./scripts/check-markdown.ts",
-    "markdown:links": "ts-node ./scripts/check-markdown.ts --links"
+    "markdown:check": "ts-node ./.scripts/check-markdown.ts",
+    "markdown:links": "ts-node ./.scripts/check-markdown.ts --links"
   },
   "type": "module",
   "devDependencies": {

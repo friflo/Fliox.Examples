@@ -19,7 +19,7 @@
         "package.json": false,
         "package-lock.json": true,
         "node_modules": true,
-        "scripts": true,
+        ".scripts": true,
     },
     "cSpell.words": [
         "bchavez",
