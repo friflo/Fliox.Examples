@@ -176,14 +176,18 @@ Hub Explorer - http://localhost:8010/fliox/
 </div>
 
 ## Credits
-- [Nick Chapsas](https://https://www.youtube.com/c/Elfocrash)   · tried to adapt his screen recording style
-- [Patrick God](https://www.youtube.com/c/PatrickGod)           · how to build a Web API using an ORM - EF Core
-- [OBS Studio](https://github.com/obsproject/obs-studio)        · for screen recording of the demo video
-- [NUnit](https://nunit.org/)                                   · used for unit testing of the Demos and the JSON Fliox library
-- [Bogus](https://github.com/bchavez/Bogus)                     · to create Fake data by the DemoHub
-- [Swagger](https://swagger.io/)                                · as a REST / OpenAPI UI used by the Hub Explorer
-- [GraphiQL](https://github.com/graphql/graphiql)               · as a GraphQL UI - used by the Hub Explorer
-- [.NET guys](https://dotnet.microsoft.com/en-us/)              · the platform providing compiler, runtime, IDE's & ASP.NET Core
+
+|                                                        |         |                                                                |
+| -------------------------------------------------------| ------- | -------------------------------------------------------------- |
+| [Nick Chapsas](https://www.youtube.com/c/Elfocrash)    | YouTube | tried to adapt his screen recording style                      |
+| [Patrick God](https://www.youtube.com/c/PatrickGod)    | YouTube | how to build a Web API using an ORM - EF Core                  |
+| [.NET](https://www.youtube.com/c/dotNET)               | YouTube | videos all around .NET                                         |
+| [OBS Studio](https://github.com/obsproject/obs-studio) | GitHub  | for screen recording of the demo video                         |
+| [NUnit](https://nunit.org/)                            | WebSite | used for unit testing of the Demos and the JSON Fliox library  |
+| [Bogus](https://github.com/bchavez/Bogus)              | GitHub  | to create Fake data by the DemoHub                             |
+| [Swagger](https://swagger.io/)                         | WebSite | a REST / OpenAPI UI used by the Hub Explorer                   |
+| [GraphiQL](https://github.com/graphql/graphiql)        | GitHub  | a GraphQL UI - used by the Hub Explorer                        |
+| [.NET guys](https://dotnet.microsoft.com/en-us/)       | WebSite | the platform providing compiler, runtime, IDE's & ASP.NET Core |
 
 
 *Happy coding!*  
