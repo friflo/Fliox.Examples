@@ -27,8 +27,8 @@ This project contains two **ready to run** examples showing how to create and us
 The examples have a different set of features. Their features are listed [below](#features).  
 The intention is to guide how to add a new or remove an existing features in an application.
 
-- [**Demo**](#demo) - *common* example
-- [**Todo**](#todo) - *minimal* example
+- [**Demo**](#demo)    *common* example  - LOC: 560
+- [**Todo**](#todo)    *minimal* example - LOC:  70
 
 Each example contains three folders / C# projects
 
