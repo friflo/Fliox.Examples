@@ -70,7 +70,7 @@ Try out the online example [**DemoHub on AWS**](http://ec2-174-129-178-18.comput
 The Todo example contains a *minimal* **Client**, a *minimal* **Hub** and **unit tests**.  
 **Hub** features:  
 [**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
-HttpListener hosting, **REST / OpenAPI**, **Batch API**, **database schema** & **code generation**.  
+HttpListener hosting, **REST / OpenAPI**, **Batch API** & **database schema**.  
 
 Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
 
