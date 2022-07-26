@@ -15,8 +15,8 @@ This project contains two **ready to run** examples showing how to create and us
 ## Content
 
 - [Examples](#examples)
-    - [DemoHub](#demohub)
-    - [TodoHub](#todohub)
+    - [Demo](#demo)
+    - [Todo](#todo)
 - [Features](#features)
 - [Database provider](#database-provider)
 - [Build](#build)
@@ -27,8 +27,8 @@ This project contains two **ready to run** examples showing how to create and us
 The examples have a different set of features. Their features are listed [below](#features).  
 The intention is to guide how to add a new or remove an existing features in an application.
 
-- [**DemoHub**](#demohub) - *common* example
-- [**TodoHub**](#todohub) - *minimal* example
+- [**Demo**](#demo) - *common* example
+- [**Todo**](#todo) - *minimal* example
 
 Each example contains three folders / C# projects
 
@@ -42,13 +42,13 @@ The **API**'s used by the examples are available at [**JSON Fliox - API Referenc
 
 Build, Test and Run instructions [below](#build)
 
-[![DemoHub Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "DemoHub Walkthrough")
+[![Demos Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "Demos Walkthrough")
 
 
-## **DemoHub**
+## **Demo**
 📄   [README.md](Demo/Client/README.md)
 
-Contains a *common* `Client`, a *common* `Hub` and unit tests. Additional to **TodoHub** the Hub supports:  
+Contains a *common* `Client`, a *common* `Hub` and unit tests. Additional to **Todo/Hub** the Hub supports:  
 **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers
 and uses [GraphQLParser](https://github.com/graphql-dotnet/parser) to support GraphQL.
@@ -63,10 +63,10 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 
 
 
-## **TodoHub**
+## **Todo**
 📄   [README.md](Todo/Client/README.md)
 
-Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **TodoHub** supports:  
+Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **Hub** supports:  
 [**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
 [**ORM Client**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub/Client/README.md),
 HttpListener hosting, **REST / OpenAPI**, Batch API, **database schema** & code generation.  
