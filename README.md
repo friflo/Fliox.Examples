@@ -38,12 +38,14 @@ Each example contains three folders / C# projects
 | **Hub**    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                          |
 | **Test**   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, file, memory]` |
 
-The **API**'s used by the examples are available at [**JSON Fliox - API Reference**](https://github.com/friflo/fliox-docs)
 
-Build, Test and Run instructions [below](#build)
+The following video demonstrates a Walkthrough of the examples.
 
 [![Demos Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "Demos Walkthrough")
 
+The **API**'s used by the examples are available at [**JSON Fliox - API Reference**](https://github.com/friflo/fliox-docs)
+
+Build, Test and Run instructions described ad the [Build](#build) section
 
 ## **Demo**
 📄   [README.md](Demo/Client/README.md)
