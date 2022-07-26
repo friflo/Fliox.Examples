@@ -18,8 +18,8 @@ namespace TodoHub
         /// <summary> blueprint to showcase a minimal feature set of a <see cref="HttpHost"/> </summary>
         private static HttpHost CreateHttpHost()
         {
-            var typeSchema          = NativeTypeSchema.Create(typeof(TodoClient));
             var database            = new FileDatabase("main_db", "../Test/DB/main_db");
+            var typeSchema          = NativeTypeSchema.Create(typeof(TodoClient));
             database.Schema         = new DatabaseSchema(typeSchema);
 
             var hub                 = new FlioxHub(database);
