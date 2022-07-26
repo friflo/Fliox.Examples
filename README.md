@@ -49,13 +49,13 @@ Build, Test and Run instructions [below](#build)
 📄   [README.md](Demo/Client/README.md)
 
 The Demo example contains a *common* **Client**, a *common* **Hub** and **unit tests**.  
-Additional to **Todo/Hub** the Hub provides:  
-**ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
+**Hub** features:  
+All **Todo/Hub** features + **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers
 and uses [GraphQLParser](https://github.com/graphql-dotnet/parser) to support GraphQL.
 
-The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete, query and subscribe records in the `main_db` containers.  
-Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
+Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
+Try out the online example [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
 
 |              | Client                       | Hub                                                                    |
 |--------------|------------------------------|------------------------------------------------------------------------|
@@ -68,11 +68,11 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 📄   [README.md](Todo/Client/README.md)
 
 The Todo example contains a *minimal* **Client**, a *minimal* **Hub** and **unit tests**.  
-The **Hub** provides:  
+**Hub** features:  
 [**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
-HttpListener hosting, **REST / OpenAPI**, Batch API, **database schema** & code generation.  
+HttpListener hosting, **REST / OpenAPI**, **Batch API**, **database schema** & **code generation**.  
 
-The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete and query records in the container `jobs`.  
+Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
 
 |              | Client                       | Hub                          |
 |--------------|------------------------------|------------------------------|
