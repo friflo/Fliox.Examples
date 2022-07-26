@@ -2,15 +2,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build all",
             "isBuildCommand": true,
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
                 "${workspaceFolder}/Demos.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/property:GenerateFullPaths=true"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -34,8 +33,7 @@
             "args": [
                 "publish",
                 "${workspaceFolder}/Demos.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/property:GenerateFullPaths=true"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -45,10 +43,43 @@
             "type": "process",
             "args": [
                 "clean",
-                "${workspaceFolder}/Demos.sln",
-                "/consoleloggerparameters:NoSummary"
+                "${workspaceFolder}/Demos.sln"
             ],
             "problemMatcher": "$msCompile"
-        }
+        },
+        // ----------------------- build projects -----------------------
+        {
+            "label": "build DemoHub",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": ["build", "${workspaceFolder}/Demo/Hub/DemoHub.csproj"],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build DemoTest",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": ["build", "${workspaceFolder}/Demo/Test/DemoTest.csproj"],
+            "problemMatcher": "$msCompile"
+        },
+
+        {
+            "label": "build TodoHub",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": ["build", "${workspaceFolder}/Todo/Hub/TodoHub.csproj"],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build TodoTest",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": ["build", "${workspaceFolder}/Todo/Test/TodoTest.csproj"],
+            "problemMatcher": "$msCompile"
+        },
     ]
 }
