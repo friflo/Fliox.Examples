@@ -32,11 +32,11 @@ The intention is to guide how to add a new or remove an existing features in an 
 
 Each example contains three folders / C# projects
 
-| folder   | project type      | description               | run command                                           |
-|----------|-------------------|---------------------------|-------------------------------------------------------|
-| `Client` | .NET library      | database client / schema  |                                                       |
-| `Hub`    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                          |
-| `Test`   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, file, memory]` |
+| folder     | project type      | description               | run command                                           |
+|------------|-------------------|---------------------------|-------------------------------------------------------|
+| **Client** | .NET library      | database client / schema  |                                                       |
+| **Hub**    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                          |
+| **Test**   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, file, memory]` |
 
 The **API**'s used by the examples are available at [**JSON Fliox - API Reference**](https://github.com/friflo/fliox-docs)
 
@@ -48,7 +48,8 @@ Build, Test and Run instructions [below](#build)
 ## **Demo**
 📄   [README.md](Demo/Client/README.md)
 
-Contains a *common* `Client`, a *common* `Hub` and unit tests. Additional to **Todo/Hub** the Hub supports:  
+The Demo example contains a *common* **Client**, a *common* **Hub** and **unit tests**.  
+Additional to **Todo/Hub** the Hub provides:  
 **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers
 and uses [GraphQLParser](https://github.com/graphql-dotnet/parser) to support GraphQL.
@@ -56,7 +57,7 @@ and uses [GraphQLParser](https://github.com/graphql-dotnet/parser) to support Gr
 The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete, query and subscribe records in the `main_db` containers.  
 Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
 
-|              | `Client`                     | `Hub`                                                                  |
+|              | Client                       | Hub                                                                    |
 |--------------|------------------------------|------------------------------------------------------------------------|
 | C#           | 2 files - LOC 130            | 4 files - LOC bootstrap 80, ASP.NET Core 70, domain examples 280       |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 7 dlls 900 KB  **GraphQLParser** 300kb  **Bogus** 2.4MB |
@@ -66,13 +67,14 @@ Try out the [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.c
 ## **Todo**
 📄   [README.md](Todo/Client/README.md)
 
-Contains a *minimal* `Client`, a *minimal* `Hub` and unit tests. The **Hub** supports:  
+The Todo example contains a *minimal* **Client**, a *minimal* **Hub** and **unit tests**.  
+The **Hub** provides:  
 [**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
 HttpListener hosting, **REST / OpenAPI**, Batch API, **database schema** & code generation.  
 
 The Hub Explorer at http://localhost:8010/fliox/ can be used to read, write, delete and query records in the container `jobs`.  
 
-|              | `Client`                     | `Hub`                        |
+|              | Client                       | Hub                          |
 |--------------|------------------------------|------------------------------|
 | C#           | 1 file - LOC 30              | 1 file - LOC 40              |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 5 dlls 855 KB |
