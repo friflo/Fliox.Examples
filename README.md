@@ -164,7 +164,7 @@ info:  add extension db: cluster (in-memory)
 info:  add extension db: monitor (in-memory)
 info:  add extension db: user_db (file-system)
 info:  create HttpHost db: main_db (in-memory)
-info:  DemoHub · dev - v1.0.0    FlioxHub - v0.0.14
+info:  DemoHub - v1.0.0,   Friflo.Json.Fliox - v0.0.15
     ____   _   _
    |  __| | | |_|  ____  __  __
    |  _|  | | | | | __ | \ \/ /
