@@ -1,1 +1,0 @@
-![title](images/title.svg)
