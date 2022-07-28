@@ -47,7 +47,7 @@ namespace DemoTest {
             };
             client.articles.SubscribeChanges(Change.All, (changes, context) => {
                 foreach (var entity in changes.Upserts) {
-                    Console.WriteLine($"EventSeq: {context.EventSeq} - upsert article: {entity.id} {entity.name}");
+                    Console.WriteLine($"EventSeq: {context.EventSeq} - upsert article: {entity.id}, name: {entity.name}");
                 }
                 foreach (var key in changes.Deletes) {
                     Console.WriteLine($"EventSeq: {context.EventSeq} - delete article: {key}");
@@ -55,10 +55,8 @@ namespace DemoTest {
             });
             await client.SyncTasks();
             
-            Console.WriteLine("\n wait for events ... (press key to exit)");
-            await Task.Run ( ( ) => Console.ReadKey ( true ) );
-            
-            Console.WriteLine("... exit");
+            Console.WriteLine("\n wait for events ... (exit with: CTRL + C)\n");
+            await Task.Delay(3_600_000); // wait 1 hour
         }
             
         private static FlioxHub CreateHub(string option)
