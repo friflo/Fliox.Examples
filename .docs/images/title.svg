@@ -87,15 +87,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1351"
+     inkscape:window-width="1920"
+     inkscape:window-height="1121"
      id="namedview8425"
      showgrid="false"
-     inkscape:zoom="0.70625002"
-     inkscape:cx="1286.2578"
-     inkscape:cy="694.31481"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:zoom="0.35312501"
+     inkscape:cx="1139.1081"
+     inkscape:cy="985.41192"
+     inkscape:window-x="2551"
+     inkscape:window-y="94"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg8378"
      showguides="false"
@@ -120,7 +120,8 @@
          x="-240.70796"
          y="23.716818" /></flowRegion><flowPara
        id="flowPara8253" /></flowRoot>  <g
-     id="g8159">
+     id="g8159"
+     transform="matrix(0.64964791,0,0,0.64964791,373.1658,288.30089)">
     <g
        transform="matrix(1.2043164,0,0,1.2043164,-1.2603896,-248.7228)"
        id="g8091">
@@ -291,7 +292,7 @@
          ry="38.418068" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:187.31391907px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:-21.95939255px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:187.31391907px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:-21.95939255px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="226.8132"
          y="1089.6368"
          id="text8243"
@@ -300,7 +301,7 @@
            id="tspan8245"
            x="226.8132"
            y="1089.6368"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';word-spacing:-21.95939255px;fill:#ffffff;">.NET    ORM    NoSQL    Hub</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';word-spacing:-21.95939255px;fill:#ffffff">.NET    ORM    NoSQL    Hub</tspan></text>
     </g>
   </g>
   <text
