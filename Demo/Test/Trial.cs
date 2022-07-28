@@ -47,7 +47,7 @@ namespace DemoTest {
             };
             client.articles.SubscribeChanges(Change.All, (changes, context) => {
                 foreach (var entity in changes.Upserts) {
-                    Console.WriteLine($"EventSeq: {context.EventSeq} - upsert article: {entity.name}");
+                    Console.WriteLine($"EventSeq: {context.EventSeq} - upsert article: {entity.id} {entity.name}");
                 }
                 foreach (var key in changes.Deletes) {
                     Console.WriteLine($"EventSeq: {context.EventSeq} - delete article: {key}");
