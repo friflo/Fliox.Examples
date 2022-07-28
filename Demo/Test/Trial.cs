@@ -55,7 +55,7 @@ namespace DemoTest {
             });
             await client.SyncTasks();
             
-            Console.WriteLine("\nwait for events ... (press key to exit)");
+            Console.WriteLine("\n wait for events ... (press key to exit)");
             await Task.Run ( ( ) => Console.ReadKey ( true ) );
             
             Console.WriteLine("... exit");
