@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -92,8 +92,8 @@
      id="namedview8425"
      showgrid="false"
      inkscape:zoom="0.70625002"
-     inkscape:cx="1271.1065"
-     inkscape:cy="674.55697"
+     inkscape:cx="1286.2578"
+     inkscape:cy="694.31481"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -120,19 +120,9 @@
          x="-240.70796"
          y="23.716818" /></flowRegion><flowPara
        id="flowPara8253" /></flowRoot>  <g
-     id="g8126"
-     transform="translate(0,26.902654)">
-    <rect
-       ry="36.4132"
-       rx="38.746025"
-       y="843.30731"
-       x="18.507708"
-       height="230.34834"
-       width="2522.7986"
-       id="rect8229"
-       style="opacity:1;fill:#000000;fill-opacity:0.62611275;fill-rule:nonzero;stroke:none;stroke-width:23.39999962;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+     id="g8159">
     <g
-       transform="matrix(1.2043164,0,0,1.2043164,-1.2603896,-275.62545)"
+       transform="matrix(1.2043164,0,0,1.2043164,-1.2603896,-248.7228)"
        id="g8091">
       <path
          style="fill:#0000c9;fill-rule:evenodd"
@@ -187,7 +177,7 @@
     </g>
     <g
        clip-path="url(#clipPath8190)"
-       transform="matrix(5.1687286,0,0,5.1687286,849.76453,564.22201)"
+       transform="matrix(5.1687286,0,0,5.1687286,849.76453,591.12466)"
        id="g8219">
       <g
          id="g8667"
@@ -288,24 +278,30 @@
          inkscape:connector-curvature="0"
          style="fill:#f7c024" />
     </g>
-    <text
-       sodipodi:linespacing="125%"
-       id="text8243"
-       y="1030.8719"
-       x="50.293373"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:203.34591675px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:-23.83887291px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';word-spacing:-23.83887291px"
-         y="1030.8719"
-         x="50.293373"
-         id="tspan8245"
-         sodipodi:role="line">.NET<tspan
-   id="tspan8137"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;word-spacing:-23.83887291px"> • </tspan>ORM<tspan
-   id="tspan8231"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"> • </tspan>NoSQL<tspan
-   id="tspan8233"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"> • </tspan>Hub</tspan></text>
+    <g
+       id="g8154">
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.62611275;fill-rule:nonzero;stroke:none;stroke-width:23.39999962;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect8229"
+         width="2323.8987"
+         height="243.03104"
+         x="194.75284"
+         y="904.25287"
+         rx="35.69125"
+         ry="38.418068" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:187.31391907px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:-21.95939255px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         x="226.8132"
+         y="1089.6368"
+         id="text8243"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan8245"
+           x="226.8132"
+           y="1089.6368"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';word-spacing:-21.95939255px;fill:#ffffff;">.NET    ORM    NoSQL    Hub</tspan></text>
+    </g>
   </g>
   <text
      xml:space="preserve"
