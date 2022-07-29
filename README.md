@@ -44,7 +44,7 @@ The following video demonstrates a Walkthrough of the examples.
 
 [![Demos Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "Demos Walkthrough")
 
-The **API**'s used by the examples are available at [**JSON Fliox - API Reference**](https://github.com/friflo/fliox-docs)
+The **API**'s used by the examples are available at [**fliox-docs API Reference**](https://github.com/friflo/fliox-docs)
 
 Build, Test and Run instructions described ad the [Build](#build) section
 
