@@ -54,8 +54,7 @@ Build, Test and Run instructions described ad the [Build](#build) section
 The Demo example contains a *common* **Client**, a *common* **Hub** and **unit tests**.  
 **Hub** features:  
 All **Todo/Hub** features + **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
-It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers
-and uses [GraphQLParser](https://github.com/graphql-dotnet/parser) to support GraphQL.
+It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers.
 
 Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
 Try out the online example [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
