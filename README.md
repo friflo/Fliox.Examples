@@ -179,6 +179,12 @@ Hub Explorer - http://localhost:8010/fliox/
 ```
 </div>
 
+run a Test client accessing the Hub from its folder - e.g.
+```cmd
+cd ./Demo/Test
+dotnet run
+```
+
 ## Credits
 
 |                                                             |         |                                                                |
