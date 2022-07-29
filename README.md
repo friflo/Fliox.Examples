@@ -11,7 +11,7 @@ This project contains two **ready to run** examples showing how to create and us
 *In short*  
 **JSON Fliox** is .NET library supporting simple and efficient access to NoSQL databases via C# or Web clients.
 
-Demos on GitHub: [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
+This repo on GitHub: [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
 
 ## Content
 
