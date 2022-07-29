@@ -161,22 +161,8 @@ cd ./Demo/Hub
 dotnet run
 ```
 The server will start with logs like
-<div style="background-color: #0000ff40;">
 
-```console
-info:  add extension db: cluster (in-memory)
-info:  add extension db: monitor (in-memory)
-info:  add extension db: user_db (file-system)
-info:  create HttpHost db: main_db (in-memory)
-info:  DemoHub - v1.0.0,   Friflo.Json.Fliox - v0.0.15
-    ____   _   _
-   |  __| | | |_|  ____  __  __
-   |  _|  | | | | | __ | \ \/ /
-   |_|    |_| |_| |____| /_/\_\   .oOo.  ..oo.  .oOOo..
-
-Hub Explorer - http://localhost:8010/fliox/
-```
-</div>
+![dd](.docs/images/server-log.png)
 
 run a Test client accessing the Hub from its folder - e.g.
 ```cmd
