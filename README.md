@@ -51,7 +51,7 @@ The following video demonstrates a Walkthrough of the examples.
 
 The **API**'s used by the examples are available at [**fliox-docs API Reference**](https://github.com/friflo/fliox-docs)
 
-Build, Test and Run instructions described ad the [Build](#build) section
+Build, Test and Run instructions described ad the [Build](#-build) section
 
 ## **Demo**
 📄   [README.md](Demo/Client/README.md)
