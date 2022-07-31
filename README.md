@@ -5,6 +5,8 @@
 [![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
 
 
+## 🎯 Description
+
 This project contains two **ready to run** examples showing how to create and use
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/README.md) **Clients** & **Hubs**.  
 
@@ -13,17 +15,19 @@ This project contains two **ready to run** examples showing how to create and us
 
 This repo on GitHub: [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
 
+<br/>
+
 ## Content
 
 - [Examples](#examples)
     - [Demo](#demo)
     - [Todo](#todo)
 - [Features](#features)
-- [Database provider](#database-provider)
 - [Build](#build)
 
+<br/>
 
-# Examples
+# 🚀 Examples
 
 The examples have a different set of features. Their features are listed [below](#features).  
 The intention is to guide how to add a new or remove an existing features in an application.
@@ -81,9 +85,9 @@ Use the Hub Explorer http://localhost:8010/fliox/ to check the features.
 | C#           | 1 file - LOC 30              | 1 file - LOC 40              |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 5 dlls 855 KB |
 
+<br/><br/>
 
-
-# Features
+# 🎨 Features
 
 Comparison of features enabled / used in each Hub example.
 
@@ -117,7 +121,7 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 ⁽¹⁾    *integral feature*  
  ²     *3rd party development*
 
-# Database provider
+## Database provider
 
 | provider / adapter           |       Fliox        |       EF Core      |
 |------------------------------|:------------------:|:------------------:|
@@ -137,8 +141,9 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
  ✓     *maintainer development*  
  ²     *3rd party development*
 
+<br/><br/>
 
-# Build
+# 🔧 Build
 
 The solution and its projects can be build, tested and executed on **Windows**, **Linux**, and **macOS**.  
 It can be used with following IDE's: **VSCode**, **Rider** & **Visual Studio 2022**.
@@ -170,7 +175,9 @@ cd ./Demo/Test
 dotnet run
 ```
 
-## Credits
+<br/><br/>
+
+# 🙏 Credits
 
 |                                                             |         |                                                                |
 | ----------------------------------------------------------- | ------- | -------------------------------------------------------------- |
@@ -193,8 +200,8 @@ Leave a ⭐
 Happy coding!  
 😊 💻
 
-# License
+## License
 
 This demo project is licensed under MIT.
 
-Copyright © 2022   👨‍🦲 Ullrich Praetz
+Copyright © 2022   Ullrich Praetz
