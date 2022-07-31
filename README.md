@@ -172,11 +172,15 @@ run a Hub as an HTTP server from its folder - e.g.
 cd ./Demo/Hub
 dotnet run
 ```
-The server will start with logs like
+the server will start with logs like
 
 ![dd](.docs/images/server-log.png)
 
-run a Test client accessing the Hub from its folder - e.g.
+open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
+
+<br/>
+
+run the .NET Test client accessing the Hub from its folder - e.g.
 ```cmd
 cd ./Demo/Test
 dotnet run
