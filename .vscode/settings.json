@@ -20,6 +20,7 @@
         "package-lock.json": true,
         "node_modules": true,
         ".scripts": true,
+        ".gitattributes": true
     },
     "cSpell.words": [
         "bchavez",

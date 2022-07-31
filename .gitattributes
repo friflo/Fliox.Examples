@@ -1,0 +1,4 @@
+
+# remove *.ts files from GitHub Languages section
+# [how to change the category? · Discussion #23333 · community] https://github.com/orgs/community/discussions/23333
+*.ts linguist-detectable=false
