@@ -151,6 +151,12 @@ It can be used with following IDE's: **VSCode**, **Rider** & **Visual Studio 202
 
 *Note*: In order to build and run the examples the [**.NET 6.0 SDK**](https://dotnet.microsoft.com/en-us/download) is required.
 
+clone repository and open its directory
+```cmd
+git clone https://github.com/friflo/FlioxHub.Demos.git
+cd FlioxHub.Demos
+```
+
 build all examples
 ```cmd
 dotnet build
