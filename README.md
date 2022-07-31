@@ -93,20 +93,20 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | feature                                   | 🔎 Search            | TodoHub | DemoHub |    EF Core    |
 |-------------------------------------------|-----------------------|:------:|:------:|:-------------:|
 | ORM - C# .NET                             | `FlioxClient`         |   ✅   |   ✅   | `DbContext`  |
-| Unit of Work - support                    | (1)                   |    ✓   |    ✓   |       ✓       |
-| ORM LINQ                                  | (1)                   |   ✅   |   ✅   |       ✓       |
+| Unit of Work - support                    | ⁽¹⁾                   |    ✓   |    ✓   |       ✓       |
+| ORM LINQ                                  | ⁽¹⁾                   |   ✅   |   ✅   |       ✓       |
 | Hub - HttpListener integration            | `HttpListenerHost`    |   ✅   |   ✅   |               |
 | Hub - ASP.NET Core integration            | `ExecuteFlioxRequest` |   ✓    |   ✅   |               |
 | Hub Explorer - require `cluster` DB       | `HubExplorer`         |   ✅   |   ✅   |               |
-| Batch API - HTTP & WebSocket              | (1)                   |   ✅   |   ✅   |               |
-| REST / OpenAPI                            | (1)                   |   ✅   |   ✅   |  Swashbuckle  |
-| GraphQL API                               | `GraphQLHandler`      |   ✓    |   ✅   | Hot Chocolate |
+| Batch API - HTTP & WebSocket              | ⁽¹⁾                   |   ✅   |   ✅   |               |
+| REST / OpenAPI                            | ⁽¹⁾                   |   ✅   |   ✅   |  Swashbuckle² |
+| GraphQL API                               | `GraphQLHandler`      |   ✓    |   ✅   | Hot Chocolate²|
 | `cluster` DB - info of hosted databases   | `ClusterDB`           |   ✅   |   ✅   |               |
 | `monitor` DB - request / task monitoring  | `MonitorDB`           |   ✓    |   ✅   |               |
 | `user_db` DB - user / task authorization  | `UserAuthenticator`   |   ✓    |   ✅   |               |
 | Pub-Sub - subscribe DB changes / commands | `EventDispatcher`     |   ✓    |   ✅   |    SignalR    |
 | `main_db` database schema                 | `DatabaseSchema`      |   ✅   |   ✅   |       ✓       |
-| Code generation TS, C#, HTML, Kotlin, ... | (1)                   |   ✅   |   ✅   |               |
+| Code generation TS, C#, HTML, Kotlin, ... | ⁽¹⁾                   |   ✅   |   ✅   |               |
 | Seed database `main_db`                   | `SeedDatabase`        |   ✓    |   ✅   |       ✓       |
 | Database containers                       | `EntitySet`           |   1    |    5    |   `DbSet`     |
 | Container relations                       | `Relation`            |   ✓    |   ✅   |       ✓       |
@@ -114,8 +114,8 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 
  ✓     *supported*  
 ✅   *supported & integrated*  
-(1)    *integral feature*  
-
+⁽¹⁾    *integral feature*  
+ ²     *3rd party development*
 
 # Database provider
 
@@ -126,16 +126,16 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | `file-system` - JSON files   |          ✓         |                    |
 | `remote` - HTTP & Websocket  |          ✓         |                    |
 | SQLite                       |                    |         ✓          |
-| MariaDB                      |                    |       Pomelo       |
-| MySQL                        |                    |       Oracle       |
-| PostgreSQL                   |                    |       Npgsql       |
+| MariaDB                      |                    |       Pomelo²      |
+| MySQL                        |                    |       Oracle²      |
+| PostgreSQL                   |                    |       Npgsql²      |
 | Cosmos DB                    |          ✓         |         ✓         |
 | SQL Server                   |                    |         ✓          |
-| Oracle DB                    |                    |       Oracle       |
-| DB2                          |                    |        IBM         |
+| Oracle DB                    |                    |       Oracle²      |
+| DB2                          |                    |        IBM²        |
 
- ✓     *maintainer support*  
-
+ ✓     *maintainer development*  
+ ²     *3rd party development*
 
 
 # Build
