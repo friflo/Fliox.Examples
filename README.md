@@ -187,11 +187,14 @@ dotnet run
 | [.NET guys](https://dotnet.microsoft.com/en-us/)            | WebSite | the platform providing compiler, runtime, IDE's & ASP.NET Core |
 
 
-*Happy coding!*  
+💖 Like this project?  
+Leave a ⭐
+
+Happy coding!  
 😊 💻
 
 # License
 
 This demo project is licensed under MIT.
 
-Copyright © 2022 Ullrich Praetz
+Copyright © 2022   👨‍🦲 Ullrich Praetz
