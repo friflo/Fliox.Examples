@@ -20,11 +20,11 @@ This repo on GitHub: [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.
 
 ## Content
 
-- [Examples](#examples)
+- 🚀 [Examples](#-examples)
     - [Demo](#demo)
     - [Todo](#todo)
-- [Features](#features)
-- [Build](#build)
+- 🎨 [Features](#-features)
+- 🔧 [Build](#-build)
 
 <br/>
 
