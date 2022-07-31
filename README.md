@@ -4,6 +4,7 @@
 
 [![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
 
+<br/>
 
 ## 🎯 Description
 
@@ -198,7 +199,8 @@ dotnet run
 Leave a ⭐
 
 Happy coding!  
-😊 💻
+
+<br/>
 
 ## License
 
