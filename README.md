@@ -30,7 +30,7 @@ This repo on GitHub: [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.
 
 # 🚀 Examples
 
-The examples have a different set of features. Their features are listed [below](#features).  
+Both examples have a different set of features. Their features are listed [below](#-features).  
 The intention is to guide how to add a new or remove an existing features in an application.
 
 - [**Demo**](#demo)    *common* example  - LOC: 560
