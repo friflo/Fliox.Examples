@@ -205,8 +205,8 @@ dotnet run
 | [.NET guys](https://dotnet.microsoft.com/en-us/)            | WebSite | the platform providing compiler, runtime, IDE's & ASP.NET Core |
 
 
-💖 Like this project?  
-Leave a ⭐ at  [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
+💖 *Like this project?*  
+*Leave a* ⭐ at  [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
 
 Happy coding!  
 
