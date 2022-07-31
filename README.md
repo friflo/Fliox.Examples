@@ -206,7 +206,7 @@ dotnet run
 
 
 💖 Like this project?  
-Leave a ⭐
+Leave a ⭐ at  [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
 
 Happy coding!  
 
