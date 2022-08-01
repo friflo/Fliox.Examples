@@ -70,7 +70,7 @@ namespace DemoTest {
                 case "file":    return new FlioxHub(new FileDatabase("main_db", "./DB/main_db"));
                 case "memory":  return new FlioxHub(new MemoryDatabase("main_db"));
             }
-            throw new InvalidOperationException($"unknown option: '{option}' use: [http, file, memory]");
+            throw new InvalidOperationException($"unknown option: '{option}' use: [http, ws, file, memory]");
         }
     }
 }
