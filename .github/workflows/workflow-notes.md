@@ -2,7 +2,7 @@
 
 # 2022-07-16  Build error:
 
-https://github.com/friflo/FlioxHub.Demos/runs/7372704105
+https://github.com/friflo/Fliox.Examples/runs/7372704105
 
 This and 11 previous builds failed for the same reason:
 
@@ -19,7 +19,7 @@ Similar to:
 
 ## Solution
 
-[Github Actions - analyse: GenerateDepsFile error](https://github.com/friflo/FlioxHub.Demos/commit/1a6fefc26a1b5d60c43a1f9eb7c389fc0e46dfed)
+[Github Actions - analyse: GenerateDepsFile error](https://github.com/friflo/Fliox.Examples/commit/1a6fefc26a1b5d60c43a1f9eb7c389fc0e46dfed)
 
 remove `--framework net6.0`  
 in yml ->

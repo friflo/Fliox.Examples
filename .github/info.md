@@ -7,7 +7,7 @@ A .NET library for NoSQL databases with ORM, Database Hub & Schema support.
 
 
 ### Website
-https://github.com/friflo/FlioxHub.Demos
+https://github.com/friflo/Fliox.Examples
 
 ### Topics
 
