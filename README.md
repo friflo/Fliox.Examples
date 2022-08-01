@@ -31,7 +31,7 @@ This repo on GitHub: [friflo/Fliox.Examples](https://github.com/friflo/Fliox.Exa
 
 # 🚀 Examples
 
-Both examples have a different set of features. Their features are listed [below](#-features).  
+This project contains two examples with a different set of features. Their differences are listed as [Features](#-features).  
 The intention is to guide how to add a new or remove an existing features in an application.
 
 - [**Demo**](#demo)    *common* example  - LOC: 560
