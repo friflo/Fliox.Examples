@@ -1,6 +1,6 @@
 
 
-# [![Examples](.docs/images/Json-Fliox.svg)](https://github.com/friflo/Fliox.Examples)   **FlioxHub Examples**  ![SPLASH](.docs/images/paint-splatter.svg)
+# [![Examples](.docs/images/Json-Fliox.svg)](https://github.com/friflo/Fliox.Examples)    **Fliox Examples**  ![SPLASH](.docs/images/paint-splatter.svg)
 
 [![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/Fliox.Examples/actions)
 
