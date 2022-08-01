@@ -1,8 +1,8 @@
 
 
-# [![Examples](.docs/images/Json-Fliox.svg)](https://github.com/friflo/FlioxHub.Examples)    **FlioxHub Examples**  ![SPLASH](.docs/images/paint-splatter.svg)
+# [![Examples](.docs/images/Json-Fliox.svg)](https://github.com/friflo/Fliox.Examples)    **FlioxHub Examples**  ![SPLASH](.docs/images/paint-splatter.svg)
 
-[![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Examples/actions)
+[![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/Fliox.Examples/actions)
 
 <br/>
 
@@ -14,7 +14,7 @@ This project contains two **ready to run** examples showing how to create and us
 *In short*  
 **JSON Fliox** is .NET library supporting simple and efficient access to NoSQL databases via C# or Web clients.
 
-This repo on GitHub: [friflo/FlioxHub.Examples](https://github.com/friflo/FlioxHub.Examples)
+This repo on GitHub: [friflo/Fliox.Examples](https://github.com/friflo/Fliox.Examples)
 
 <br/>
 
@@ -154,8 +154,8 @@ It can be used with following IDE's: **VSCode**, **Rider** & **Visual Studio 202
 
 clone repository and open its directory
 ```cmd
-git clone https://github.com/friflo/FlioxHub.Examples.git
-cd FlioxHub.Examples
+git clone https://github.com/friflo/Fliox.Examples.git
+cd Fliox.Examples
 ```
 
 build all examples
@@ -208,7 +208,7 @@ dotnet run
 <br/>
 
 💖 *Like this project?*  
-*Leave a* ⭐ at  [friflo/FlioxHub.Examples](https://github.com/friflo/FlioxHub.Examples)
+*Leave a* ⭐ at  [friflo/Fliox.Examples](https://github.com/friflo/Fliox.Examples)
 
 Happy coding!  
 
