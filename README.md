@@ -6,7 +6,7 @@
 
 <br/>
 
-## 🎯 Description
+
 
 This project contains two **ready to run** examples showing how to create and use
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/README.md) **Clients** & **Hubs**.  
@@ -20,11 +20,12 @@ This repo on GitHub: [friflo/FlioxHub.Examples](https://github.com/friflo/FlioxH
 
 ## Content
 
-- 🚀 [Examples](#-examples)
+- [Examples](#-examples)
     - [Demo](#demo)
     - [Todo](#todo)
-- 🎨 [Features](#-features)
-- 🔧 [Build](#-build)
+- [Features](#-features)
+- [Build](#-build)
+- [Credits](#-credits)
 
 <br/>
 
@@ -204,6 +205,7 @@ dotnet run
 | [Monaco Editor](https://github.com/microsoft/monaco-editor) | GitHub  | integrate into Hub Explorer to edit JSON                       |
 | [.NET guys](https://dotnet.microsoft.com/en-us/)            | WebSite | the platform providing compiler, runtime, IDE's & ASP.NET Core |
 
+<br/>
 
 💖 *Like this project?*  
 *Leave a* ⭐ at  [friflo/FlioxHub.Examples](https://github.com/friflo/FlioxHub.Examples)
