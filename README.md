@@ -20,18 +20,18 @@ This repo on GitHub: [friflo/Fliox.Examples](https://github.com/friflo/Fliox.Exa
 
 # 🚩 Content
 
-- [Examples](#🚀-examples)
+- [Examples](#-examples)
     - [Demo](#demo)
     - [Todo](#todo)
-- [Features](#🎨-features)
-- [Build](#🔧-build)
-- [Credits](#🙏-credits)
+- [Features](#-features)
+- [Build](#-build)
+- [Credits](#-credits)
 
 <br/>
 
 # 🚀 Examples
 
-This project contains two examples with a different set of features. Their differences are listed at [🎨 Features](#🎨-features).  
+This project contains two examples with a different set of features. Their differences are listed at [🎨 Features](#-features).  
 The intention is to guide how to add a new or remove an existing features in an application.
 
 - [**Demo**](#demo)    *common* example  - LOC: 560
@@ -52,7 +52,7 @@ The following video demonstrates a Walkthrough of the examples.
 
 The **API**'s used by the examples are available at [**fliox-docs API Reference**](https://github.com/friflo/fliox-docs)
 
-Build, Test and Run instructions described ad the [🔧 Build](#🔧-build) section
+Build, Test and Run instructions described at [🔧 Build](#-build)
 
 ## **Demo**
 📄   [README.md](Demo/Client/README.md)
@@ -91,7 +91,7 @@ Use the Hub Explorer http://localhost:8010/fliox/ to check the features.
 
 <br/><br/>
 
-                    # 🎨 Features
+# 🎨 Features
 
 Comparison of features enabled / used in each Hub example.
 
