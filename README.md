@@ -58,6 +58,7 @@ Build, Test and Run instructions described ad the [Build](#-build) section
 📄   [README.md](Demo/Client/README.md)
 
 The Demo example contains a *common* **Client**, a *common* **Hub** and **unit tests**.  
+
 **Hub** features:  
 All **Todo/Hub** features + **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers.
@@ -76,6 +77,7 @@ Try out the online example [**DemoHub on AWS**](http://ec2-174-129-178-18.comput
 📄   [README.md](Todo/Client/README.md)
 
 The Todo example contains a *minimal* **Client**, a *minimal* **Hub** and **unit tests**.  
+
 **Hub** features:  
 [**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
 HttpListener hosting, **REST / OpenAPI**, **Batch API** & **database schema**.  
