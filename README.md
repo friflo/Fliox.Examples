@@ -188,6 +188,7 @@ run the .NET Test client accessing the Hub from its folder - e.g.
 cd ./Demo/Test
 dotnet run
 ```
+It will execute the client methods used in `Trial.Main()`
 
 <br/><br/>
 
