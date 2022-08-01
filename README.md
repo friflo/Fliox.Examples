@@ -1,8 +1,8 @@
 
 
-# [![FlioxHub Demos](.docs/images/Json-Fliox.svg)](https://github.com/friflo/FlioxHub.Demos)    **FlioxHub Demos**  ![SPLASH](.docs/images/paint-splatter.svg)
+# [![Examples](.docs/images/Json-Fliox.svg)](https://github.com/friflo/FlioxHub.Examples)    **FlioxHub Examples**  ![SPLASH](.docs/images/paint-splatter.svg)
 
-[![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Demos/actions)
+[![.NET Tests](https://raw.githubusercontent.com/friflo/test-github-pages/main/docs/images/badge.svg)](https://github.com/friflo/FlioxHub.Examples/actions)
 
 <br/>
 
@@ -14,7 +14,7 @@ This project contains two **ready to run** examples showing how to create and us
 *In short*  
 **JSON Fliox** is .NET library supporting simple and efficient access to NoSQL databases via C# or Web clients.
 
-This repo on GitHub: [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
+This repo on GitHub: [friflo/FlioxHub.Examples](https://github.com/friflo/FlioxHub.Examples)
 
 <br/>
 
@@ -47,7 +47,7 @@ Each example contains three folders / C# projects
 
 The following video demonstrates a Walkthrough of the examples.
 
-[![Demos Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "Demos Walkthrough")
+[![Examples Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "Examples Walkthrough")
 
 The **API**'s used by the examples are available at [**fliox-docs API Reference**](https://github.com/friflo/fliox-docs)
 
@@ -153,8 +153,8 @@ It can be used with following IDE's: **VSCode**, **Rider** & **Visual Studio 202
 
 clone repository and open its directory
 ```cmd
-git clone https://github.com/friflo/FlioxHub.Demos.git
-cd FlioxHub.Demos
+git clone https://github.com/friflo/FlioxHub.Examples.git
+cd FlioxHub.Examples
 ```
 
 build all examples
@@ -196,7 +196,7 @@ dotnet run
 | [Patrick God](https://www.youtube.com/c/PatrickGod)         | YouTube | how to build a Web API using an ORM - EF Core                  |
 | [.NET](https://www.youtube.com/c/dotNET)                    | YouTube | videos all around .NET                                         |
 | [OBS Studio](https://github.com/obsproject/obs-studio)      | GitHub  | for screen recording of the demo video                         |
-| [NUnit](https://nunit.org/)                                 | WebSite | used for unit testing of the Demos and the JSON Fliox library  |
+| [NUnit](https://nunit.org/)                                 | WebSite | used for unit testing of the Examples and the JSON Fliox library  |
 | [Bogus](https://github.com/bchavez/Bogus)                   | GitHub  | to create Fake data by the DemoHub                             |
 | [Swagger](https://swagger.io/)                              | WebSite | a REST / OpenAPI UI used by the Hub Explorer                   |
 | [GraphiQL](https://github.com/graphql/graphiql)             | GitHub  | a GraphQL UI - used by the Hub Explorer                        |
@@ -206,7 +206,7 @@ dotnet run
 
 
 💖 *Like this project?*  
-*Leave a* ⭐ at  [friflo/FlioxHub.Demos](https://github.com/friflo/FlioxHub.Demos)
+*Leave a* ⭐ at  [friflo/FlioxHub.Examples](https://github.com/friflo/FlioxHub.Examples)
 
 Happy coding!  
 
