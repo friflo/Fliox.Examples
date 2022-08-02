@@ -161,11 +161,18 @@ cd Fliox.Examples
 build all examples
 ```cmd
 dotnet build
+⏩
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
 ```
 
 run unit tests of all examples
 ```cmd
 dotnet test
+⏩
+Passed! - Failed: 0, Passed: 7, Skipped: 0, Total: 7, Duration: 421 ms - TodoTest.dll (net6.0)
+Passed! - Failed: 0, Passed: 6, Skipped: 0, Total: 6, Duration: 712 ms - DemoTest.dll (net6.0)
 ```
 
 run a Hub as an HTTP server from its folder - e.g.
@@ -185,6 +192,10 @@ run the .NET Test client accessing the Hub from its folder - e.g.
 ```cmd
 cd ./Todo/Test
 dotnet run
+⏩
+--- jobs:
+id: 1, title: buy milk, completed: False
+id: 2, title: buy cheese, completed: True
 ```
 It will execute the client methods used in `Trial.Main()`
 
