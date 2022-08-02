@@ -195,7 +195,9 @@ It will execute the client methods used in `Trial.Main()`
 Start with the simple **Todo** example as it contains only 70 LOC.  
 Therefore execute the steps listed in [🔧 Build](./README.md#-build) section.
 
-After starting the TodoHub server open the Hub Explorer at http://localhost:8010/fliox/ in the browser.
+After starting the TodoHub server open the Hub Explorer at http://localhost:8010/fliox/ in the browser.  
+
+<br/>
 
 ![Hub Explorer](.docs/images/TodoHub-Explorer.svg)
 
@@ -209,6 +211,7 @@ Now you can try the actions below in any order.
 - Select container **jobs** to view and edit its entities aka records  
   When selecting a container the UI will change shown in the screenshot below
 
+<br/>
 
 ![Hub Explorer](.docs/images/TodoHub-Explorer-container.svg)
 
@@ -223,7 +226,7 @@ Use the container view to show, edit and query entities.
     - click **Save**
 - Execute a container query using a **LINQ filter expression** `o.completed != false`  
   and clicking **Apply filter**
-- Remove the query filter by clicking on the red ❌
+- Remove the query filter by clicking on the red ❌ on the top left in the Explorer
 - **Select All / None** entities in the container to edit them as JSON
 
 <br/>
