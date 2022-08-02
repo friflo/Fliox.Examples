@@ -121,7 +121,9 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 ⁽¹⁾    *integral feature*  
  ²     *3rd party development*
 
-## Database provider
+<br/>
+
+**Database provider**
 
 | provider / adapter           |       Fliox        |       EF Core      |
 |------------------------------|:------------------:|:------------------:|
