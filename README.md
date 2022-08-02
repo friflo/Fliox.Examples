@@ -229,15 +229,17 @@ Use the container view to show, edit and query entities.
 
 # 🙏 Credits
 
-|                                                             |         |                                                                |
-| ----------------------------------------------------------- | ------- | -------------------------------------------------------------- |
-| [NUnit](https://nunit.org/)                                 | WebSite | used for unit testing of the Examples                          |
-| [Bogus](https://github.com/bchavez/Bogus)                   | GitHub  | to create Fake data by the DemoHub                             |
-| [Swagger](https://swagger.io/)                              | WebSite | a REST / OpenAPI UI used by the Hub Explorer                   |
-| [GraphiQL](https://github.com/graphql/graphiql)             | GitHub  | a GraphQL UI - used by the Hub Explorer                        |
-| [Mermaid](https://github.com/mermaid-js/mermaid)            | GitHub  | class diagram for database schema                              |
-| [Monaco Editor](https://github.com/microsoft/monaco-editor) | GitHub  | integrated into Hub Explorer to edit JSON                      |
-| [.NET guys](https://dotnet.microsoft.com/en-us/)            | WebSite | the platform providing compiler, runtime, IDE's & ASP.NET Core |
+|                                                             |             |                                                                |
+| ----------------------------------------------------------- | ----------- | -------------------------------------------------------------- |
+| [NUnit](https://nunit.org/)                                 | C#          | used for unit testing of the Examples                          |
+| [Bogus](https://github.com/bchavez/Bogus)                   | C#          | to create Fake data by the DemoHub                             |
+| [.NET guys](https://dotnet.microsoft.com/en-us/)            | C# .NET     | the platform providing compiler, runtime, IDE's & ASP.NET Core |
+| [Swagger](https://swagger.io/)                              | static JS   | a REST / OpenAPI UI linked  by the Hub Explorer                |
+| [GraphiQL](https://github.com/graphql/graphiql)             | static JS   | a GraphQL UI linked by the Hub Explorer                        |
+| [Mermaid](https://github.com/mermaid-js/mermaid)            | static JS   | class diagram for database schema linked by the Hub Explorer   |
+| [Monaco Editor](https://github.com/microsoft/monaco-editor) | static JS   | used as JSON Editor integrated in the Hub Explorer             |
+| [Inscape](https://gitlab.com/inkscape/inkscape)             | Application | to create SVG's for this project                               |
+
 
 <br/>
 
