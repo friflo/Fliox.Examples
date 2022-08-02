@@ -246,7 +246,7 @@ Use the **Test Explorer** of your **IDE** to execute and debug these tests.
 | ----------------------------------------------------------- | ----------- | -------------------------------------------------------------- |
 | [NUnit](https://nunit.org/)                                 | C#          | used for unit testing of the Examples                          |
 | [Bogus](https://github.com/bchavez/Bogus)                   | C#          | to create Fake data by the DemoHub                             |
-| [.NET guys](https://dotnet.microsoft.com/en-us/)            | C# .NET     | the platform providing compiler, runtime, IDE's & ASP.NET Core |
+| [.NET platform](https://dotnet.microsoft.com/en-us/)        | C# .NET     | the platform providing compiler, runtime, IDE's & ASP.NET Core |
 | [Swagger](https://swagger.io/)                              | static JS   | a REST / OpenAPI UI linked  by the Hub Explorer                |
 | [GraphiQL](https://github.com/graphql/graphiql)             | static JS   | a GraphQL UI linked by the Hub Explorer                        |
 | [Mermaid](https://github.com/mermaid-js/mermaid)            | static JS   | class diagram for database schema linked by the Hub Explorer   |
