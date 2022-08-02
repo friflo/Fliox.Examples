@@ -221,7 +221,7 @@ Use the container view to show, edit and query entities.
     - click **Save**
 - Execute a container query using a **LINQ filter expression** `o.completed != false`  
   and clicking **Apply filter**
-- Remove the query filter by clicking on the red **x**
+- Remove the query filter by clicking on the red ❌
 - **Select All / None** entities in the container to edit them as JSON
 
 
