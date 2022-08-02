@@ -148,7 +148,10 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 # 🔧 Build
 
 The solution and its projects can be build, tested and executed on **Windows**, **Linux**, and **macOS**.  
-It can be used with following IDE's: **VSCode**, **Rider** & **Visual Studio 2022**.
+It can be used with following IDE's:
+[Visual Studio Code](https://code.visualstudio.com/),
+[Rider](https://www.jetbrains.com/rider/) &
+[Visual Studio 2022](https://visualstudio.microsoft.com/vs/).
 
 *Note*: In order to build and run the examples the [**.NET 6.0 SDK**](https://dotnet.microsoft.com/en-us/download) is required.
 
