@@ -1,0 +1,8 @@
+
+
+settings for screenshots
+------------------------
+
+Browser width:  1800 px
+Browser Zoom:   175 %
+Theme:          Dark mode
