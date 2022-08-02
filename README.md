@@ -197,14 +197,31 @@ After starting the TodoHub server open the Hub Explorer at http://localhost:8010
 
 ![Hub Explorer](.docs/images/TodoHub-Explorer.svg)
 
-Now you can explore the actions below in any order.
+Now you can try the actions below in any order.
 - Click on the **Project Name** to open the website describing the project
 - Click on the **Schema** link to open a single page documentation
 - Click on the **(CD) Class Diagram** link to open the database schema as a class diagram
 - Click on the **(OAS) OpenAPI** link to open the Swagger UI
 - Click on **Typescript, C#, Kotlin, JSON Schema / OpenAPI** link to export types for other languages
-- Select container **jobs** to view and edit its entities aka records
 - Select a database command - e.g. **std.Echo** - and execute it with **Send**
+- Select container **jobs** to view and edit its entities aka records  
+  When selecting a container the UI will change shown in the screenshot below
+
+
+![Hub Explorer](.docs/images/TodoHub-Explorer-container.svg)
+
+Use the container view to show, edit and query entities.
+- Click on a **REST link** to show its response in a new browser tab
+- Select an entity in the container (e.g. id: 1) to view its value in JSON editor
+- Make changes in the JSON editor an **Save** them
+- **Delete** selected entity / entities
+- Create an new entity with the JSON editor by
+    - using an exiting one
+    - change its id
+    - click **Save**
+- Execute a container query with the given **LINQ filter**  by clicking **Apply filter**
+- Remove the query filter by clicking on the red **x**
+- **Select All / None** entities in the container to edit them as JSON
 
 
 <br/><br/>
