@@ -265,6 +265,6 @@ Happy coding!
 
 ## License
 
-This demo project is licensed under MIT.
-
+This demo project is licensed under MIT.  
+Published project on GitHub 2022-08  
 Copyright © 2022   Ullrich Praetz
