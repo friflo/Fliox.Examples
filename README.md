@@ -25,6 +25,7 @@ This repo on GitHub: [friflo/Fliox.Examples](https://github.com/friflo/Fliox.Exa
     - [Todo](#todo)
 - [Features](#-features)
 - [Build](#-build)
+- [Walkthrough](#-walkthrough)
 - [Credits](#-credits)
 
 <br/>
@@ -44,11 +45,6 @@ Each example contains three folders / C# projects
 | **Client** | .NET library      | database client / schema  |                                                       |
 | **Hub**    | .NET HTTP server  | bootstrapping a Hub       | `dotnet run`                                          |
 | **Test**   | NUnit tests       | client examples & test DB | `dotnet test` <br/> `dotnet run [http, file, memory]` |
-
-
-The following video demonstrates a Walkthrough of the examples.
-
-[![Examples Walkthrough](.docs/images/json-fliox-recording.png)](https://www.youtube.com/watch?v=aAhQYupFkb0 "Examples Walkthrough")
 
 The **API**'s used by the examples are available at [**fliox-docs API Reference**](https://github.com/friflo/fliox-docs)
 
@@ -172,7 +168,7 @@ dotnet test
 
 run a Hub as an HTTP server from its folder - e.g.
 ```cmd
-cd ./Demo/Hub
+cd ./Todo/Hub
 dotnet run
 ```
 the server will start with logs like
@@ -185,10 +181,31 @@ open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
 
 run the .NET Test client accessing the Hub from its folder - e.g.
 ```cmd
-cd ./Demo/Test
+cd ./Todo/Test
 dotnet run
 ```
 It will execute the client methods used in `Trial.Main()`
+
+<br/><br/>
+
+# 🐾 Walkthrough
+
+Start with the simple **Todo** example as it contains only 70 LOC.  
+Therefore execute the steps listed in [🔧 Build](./README.md#-build) section.
+
+After starting the TodoHub server open the Hub Explorer at http://localhost:8010/fliox/ in the browser.
+
+![Hub Explorer](.docs/images/TodoHub-Explorer.svg)
+
+Now you can explore the actions below in any order.
+- Click on the **Project Name** to open the website describing the project
+- Click on the **Schema** link to open a single page documentation
+- Click on the **(CD) Class Diagram** link to open the database schema as a class diagram
+- Click on the **(OAS) OpenAPI** link to open the Swagger UI
+- Click on **Typescript, C#, Kotlin, JSON Schema / OpenAPI** link to export types for other languages
+- Select container **jobs** to view and edit its entities aka records
+- Select a database command - e.g. **std.Echo** - and execute it with **Send**
+
 
 <br/><br/>
 
@@ -196,16 +213,12 @@ It will execute the client methods used in `Trial.Main()`
 
 |                                                             |         |                                                                |
 | ----------------------------------------------------------- | ------- | -------------------------------------------------------------- |
-| [Nick Chapsas](https://www.youtube.com/c/Elfocrash)         | YouTube | tried to adapt his screen recording style                      |
-| [Patrick God](https://www.youtube.com/c/PatrickGod)         | YouTube | how to build a Web API using an ORM - EF Core                  |
-| [.NET](https://www.youtube.com/c/dotNET)                    | YouTube | videos all around .NET                                         |
-| [OBS Studio](https://github.com/obsproject/obs-studio)      | GitHub  | for screen recording of the demo video                         |
-| [NUnit](https://nunit.org/)                                 | WebSite | used for unit testing of the Examples and the JSON Fliox library  |
+| [NUnit](https://nunit.org/)                                 | WebSite | used for unit testing of the Examples                          |
 | [Bogus](https://github.com/bchavez/Bogus)                   | GitHub  | to create Fake data by the DemoHub                             |
 | [Swagger](https://swagger.io/)                              | WebSite | a REST / OpenAPI UI used by the Hub Explorer                   |
 | [GraphiQL](https://github.com/graphql/graphiql)             | GitHub  | a GraphQL UI - used by the Hub Explorer                        |
 | [Mermaid](https://github.com/mermaid-js/mermaid)            | GitHub  | class diagram for database schema                              |
-| [Monaco Editor](https://github.com/microsoft/monaco-editor) | GitHub  | integrate into Hub Explorer to edit JSON                       |
+| [Monaco Editor](https://github.com/microsoft/monaco-editor) | GitHub  | integrated into Hub Explorer to edit JSON                      |
 | [.NET guys](https://dotnet.microsoft.com/en-us/)            | WebSite | the platform providing compiler, runtime, IDE's & ASP.NET Core |
 
 <br/>
