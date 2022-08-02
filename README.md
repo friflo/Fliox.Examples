@@ -212,14 +212,15 @@ Now you can try the actions below in any order.
 
 Use the container view to show, edit and query entities.
 - Click on a **REST link** to show its response in a new browser tab
-- Select an entity in the container (e.g. id: 1) to view its value in JSON editor
-- Make changes in the JSON editor an **Save** them
+- Select an entity in the container (e.g. id: 1) to view its value in **JSON Editor**
+- Make changes in the **JSON Editor** an **Save** them
 - **Delete** selected entity / entities
-- Create an new entity with the JSON editor by
-    - using an exiting one
+- Create an new entity with the **JSON Editor** by
+    - selecting an exiting one
     - change its id
     - click **Save**
-- Execute a container query with the given **LINQ filter**  by clicking **Apply filter**
+- Execute a container query using a **LINQ filter expression** `o.completed != false`  
+  and clicking **Apply filter**
 - Remove the query filter by clicking on the red **x**
 - **Select All / None** entities in the container to edit them as JSON
 
