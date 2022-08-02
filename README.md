@@ -175,7 +175,7 @@ dotnet run
 ```
 the server will start with logs like
 
-![dd](.docs/images/server-log.png)
+![server logs](.docs/images/server-log.svg)
 
 open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
 
