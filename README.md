@@ -226,7 +226,7 @@ Use the container view to show, edit and query entities.
 
 <br/>
 
-## C# Examples
+**C# Tests**
 
 The functionality shown in the Walkthrough above is also available via the C# API.  
 How to use the API is demonstrated as unit tests in [TodoTests.cs](Todo/Test/TodoTests.cs) and [DemoTests](Demo/Test/DemoTests.cs).  
