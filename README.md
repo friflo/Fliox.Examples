@@ -224,6 +224,14 @@ Use the container view to show, edit and query entities.
 - Remove the query filter by clicking on the red ❌
 - **Select All / None** entities in the container to edit them as JSON
 
+<br/>
+
+## C# Examples
+
+The functionality shown in the Walkthrough above is also available via the C# API.  
+How to use the API is demonstrated as unit tests in [TodoTests.cs](Todo/Test/TodoTests.cs) and [DemoTests](Demo/Test/DemoTests.cs).  
+Use the **Test Explorer** of your **IDE** to execute and debug these tests.
+
 
 <br/><br/>
 
