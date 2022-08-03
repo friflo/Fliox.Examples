@@ -13,11 +13,15 @@ RUN dotnet restore Demo/Hub/DemoHub.csproj
 # copy everything else and build app
 COPY Demo/Client/.               ./Demo/Client/
 COPY Demo/Hub/.                  ./Demo/Hub/
+COPY Demo/Test/.                 ./Demo/Test/
 #
 WORKDIR /app/Demo/Hub/
 RUN dotnet publish DemoHub.csproj -c Release -o out
 #
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime 
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+
+# copy test databases: main_db & user_db
+COPY --from=build /app/Demo/Test/DB /Test/DB
 
 WORKDIR /app 
 #
