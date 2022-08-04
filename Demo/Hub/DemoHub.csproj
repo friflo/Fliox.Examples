@@ -19,9 +19,9 @@
 	
     <ItemGroup>
       <PackageReference Include="Bogus" Version="34.0.2" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="0.3.8" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.3.8" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.GraphQL" Version="0.3.8" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="0.3.14" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.3.14" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.GraphQL" Version="0.3.14" />
     </ItemGroup>
 	
     <ItemGroup>
@@ -31,8 +31,7 @@
     <!-- Copy XML files from all PackageReferences to output dir -->
     <Target Name="_ResolveCopyLocalNuGetPkgXmls" AfterTargets="ResolveReferences">
         <ItemGroup>
-        <ReferenceCopyLocalPaths          Include="@(ReferenceCopyLocalPaths->'%(RootDir)%(Directory)%(Filename).xml')"
-        Condition="'%(ReferenceCopyLocalPaths.NuGetPackageId)'!='' and Exists('%(RootDir)%(Directory)%(Filename).xml')" />
+        <ReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths->'%(RootDir)%(Directory)%(Filename).xml')" Condition="'%(ReferenceCopyLocalPaths.NuGetPackageId)'!='' and Exists('%(RootDir)%(Directory)%(Filename).xml')" />
         </ItemGroup>
     </Target>
 </Project>
