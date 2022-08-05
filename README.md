@@ -2,7 +2,7 @@
 
 # [![Examples](.docs/images/Json-Fliox.svg)](https://github.com/friflo/Fliox.Examples)    **Fliox Examples**  ![SPLASH](.docs/images/paint-splatter.svg)
 
-[![.NET Tests](https://github.com/friflo/Fliox.Examples/workflows/.NET/badge.svg)](https://github.com/friflo/Fliox.Examples/actions)
+[![CI](https://github.com/friflo/Fliox.Examples/workflows/CI/badge.svg)](https://github.com/friflo/Fliox.Examples/actions)
 
 <br/>
 
