@@ -165,7 +165,7 @@ Or use **Gitpod** to build and run the server using a browser without installing
 </a>
 
 
-clone repository and open its directory
+clone repository and open its directory - leave out this step when using Gitpod.
 ```cmd
 git clone https://github.com/friflo/Fliox.Examples.git
 cd Fliox.Examples
