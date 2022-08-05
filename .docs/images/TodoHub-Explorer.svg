@@ -315,7 +315,7 @@
          operator="over"
          result="composite2"
          id="feComposite14403-60" /></filter></defs><sodipodi:namedview
-     pagecolor="#c8c8c8"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -328,8 +328,8 @@
      id="namedview8425"
      showgrid="false"
      inkscape:zoom="0.70625002"
-     inkscape:cx="930.97343"
-     inkscape:cy="531.6814"
+     inkscape:cx="916.81413"
+     inkscape:cy="504.77875"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -338,7 +338,7 @@
      showborder="true"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1" /><clipPath
+     inkscape:deskcolor="#ffffff" /><clipPath
      id="p.0"><path
        d="m 0,0 h 960 v 540 h -960 z"
        id="path8381"
@@ -370,7 +370,7 @@
      d="m 47.433626,243.53981 c 0,0 -4.955752,27.61061 14.867256,60.17699 19.823009,32.56637 48.849558,46.0177 48.849558,46.0177"
      id="path14380"
      sodipodi:nodetypes="csc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-opacity:1;filter:url(#filter14405)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-opacity:1;filter:url(#filter14405)"
      id="rect9899"
      width="164.03178"
      height="41.007946"
@@ -391,7 +391,7 @@
      d="m 303.47066,170.89619 c 19.823,32.56637 80.00003,43.81402 80.00003,43.81402"
      id="path14380-0-9-0"
      sodipodi:nodetypes="cc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3)"
      id="rect9899-5-9-9"
      width="164.03178"
      height="41.007946"
@@ -413,7 +413,7 @@
      d="m 999.68993,333.3205 c 19.82307,32.56637 21.41087,69.44306 21.41087,69.44306"
      id="path14380-0-9-0-7"
      sodipodi:nodetypes="cc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7)"
      id="rect9899-5-9-9-3"
      width="164.03178"
      height="41.007946"
@@ -435,7 +435,7 @@
      d="m 1204.8698,438.66619 c -0.1122,5.68157 -79.2523,22.32042 -90.7251,20.38361"
      id="path14380-0-9-0-7-1"
      sodipodi:nodetypes="cc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0)"
      id="rect9899-5-9-9-3-4"
      width="164.03178"
      height="41.007946"
@@ -457,7 +457,7 @@
      d="m 1430.9828,526.75955 c -1.6592,8.77548 -185.487,27.53875 -195.8525,23.38724"
      id="path14380-0-9-0-7-1-9"
      sodipodi:nodetypes="cc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0-7)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0-7)"
      id="rect9899-5-9-9-3-4-1"
      width="164.03178"
      height="41.007946"
@@ -475,7 +475,7 @@
        id="tspan9843-1-4-6-2-3-8"
        x="1436.0858"
        y="533.59875">OpenAPI link</tspan></text><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0-7-3)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0-7-3)"
      id="rect9899-5-9-9-3-4-1-4"
      width="164.03178"
      height="41.007946"
@@ -493,7 +493,7 @@
        id="tspan9843-1-4-6-2-3-8-3"
        x="1187.4998"
        y="824.20691">Schema description</tspan></text><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0-7-3-4)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2-3-7-0-7-3-4)"
      id="rect9899-5-9-9-3-4-1-4-5"
      width="164.03178"
      height="41.007946"
@@ -519,7 +519,7 @@
      d="m 1048.7419,30.00282 c -12.9184,3.82868 -69.79185,-1.0242 -91.70814,38.30735"
      id="path14380-0-9-0-0-2"
      sodipodi:nodetypes="cc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3)"
      id="rect9899-5"
      width="164.03178"
      height="41.007946"
@@ -537,7 +537,7 @@
        id="tspan9843-1"
        x="426.01755"
        y="45.51804">Class Diagram link</tspan></text><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-3-2)"
      id="rect9899-5-9"
      width="164.03178"
      height="41.007946"
@@ -559,7 +559,7 @@
      d="m 146.07615,390.1702 c -69.934781,3.21786 -103.597983,89.34029 -115.81185,148.81845"
      id="path14380-0-9-0-7-1-0"
      sodipodi:nodetypes="cc" /><rect
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-7)"
+     style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:17.7243;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;filter:url(#filter14405-7)"
      id="rect9899-1"
      width="164.03178"
      height="41.007946"
