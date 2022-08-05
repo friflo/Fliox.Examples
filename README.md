@@ -155,6 +155,16 @@ It can be used with following IDE's:
 
 *Note*: In order to build and run the examples the [**.NET 6.0 SDK**](https://dotnet.microsoft.com/en-us/download) is required.
 
+
+Or use **Gitpod** to build and run the server entirely in the browser without installing anything.  
+<a href="https://gitpod.io/#https://github.com/friflo/Fliox.Examples">
+  <img
+    src="https://img.shields.io/badge/Build%20with-Gitpod-908a85?logo=gitpod"
+    alt="Build with Gitpod"
+  />
+</a>
+
+
 clone repository and open its directory
 ```cmd
 git clone https://github.com/friflo/Fliox.Examples.git
