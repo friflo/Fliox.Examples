@@ -11,7 +11,7 @@
         "**/.run": true,
         "**/.idea": true,
         "**/*.user": true,
-        "**/*.csproj": true,
+        "**/*.csproj": false,
         "**/*.DotSettings": true,
         "**/appsettings.json": true,
         "Demo/Client/README.md": true,
