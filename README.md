@@ -16,6 +16,8 @@ This project contains two **ready to run** examples showing how to create and us
 
 This repo on GitHub: [friflo/Fliox.Examples](https://github.com/friflo/Fliox.Examples)
 
+Published project on GitHub 2022-08
+
 <br/>
 
 # 🚩 Content
