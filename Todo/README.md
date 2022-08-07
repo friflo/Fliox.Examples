@@ -1,5 +1,5 @@
 
-# ![logo](../../.docs/images/Json-Fliox.svg)     **Fliox TodoHub**      ![SPLASH](../../.docs/images/paint-splatter.svg)
+# ![logo](../.docs/images/Json-Fliox.svg)     **Fliox TodoHub**      ![SPLASH](../.docs/images/paint-splatter.svg)
 
 
 
