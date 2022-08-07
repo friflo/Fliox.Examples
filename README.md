@@ -27,7 +27,6 @@ Published project on GitHub 2022-08
     - [Todo](#todo)
 - [Build](#-build)
 - [Walkthrough](#-walkthrough)
-- [Features](#-features)
 - [Credits](#-credits)
 
 <br/>
