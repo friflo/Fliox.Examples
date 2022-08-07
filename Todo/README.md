@@ -1,28 +1,23 @@
 
-
-# ![logo](../../.docs/images/Json-Fliox.svg)     **Fliox DemoHub**      ![SPLASH](../../.docs/images/paint-splatter.svg)
+# ![logo](../../.docs/images/Json-Fliox.svg)     **Fliox TodoHub**      ![SPLASH](../../.docs/images/paint-splatter.svg)
 
 
 
 ## General
 
-The **Fliox DemoHub** is a Web server application to demonstrate the features of the
-[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#fliox-hub) **.NET** library.
+The **TodoHub** is a Web server application to demonstrate the features of the
+[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-hub) **.NET** library.
 
 *In short*  
 **JSON Fliox** is .NET library supporting simple and efficient access to NoSQL databases via C# or Web clients.
 
-For a simple setup the server **is also the database** storing records (entities) **in-memory** or in the **file-system**.  
+For a simple setup the server **is also the database** storing records (entities) in the **file-system**.  
 This enables running the server **without** any configuration or installation of a third party DBMS (database management system).
 
 
-**TL;DR**  
-[**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*
+## TodoClient
 
-
-## DemoClient
-
-The key class when running a HTTP server using **Fliox Hub** is [**DemoClient.cs**](DemoClient.cs).  
+The key class when running a HTTP server using **Fliox Hub** is [**TodoClient.cs**](Client/TodoClient.cs).  
 This class provide two fundamental functionalities:
 1. It is a **database client** providing type-safe access to its containers, commands and messages
 2. It defines a **database schema** by declaring its containers, commands and messages.  
@@ -31,7 +26,7 @@ This class provide two fundamental functionalities:
 
 
 ## Features
-The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#host) are:
+The main features of a [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#host) are:
 - provide JSON based Web APIs - **RESTful**, **HTTP** & **WebSocket Batch** - to access **key-value** or **document** databases.
 - assign a **database schema** to each database
 - aim for optimal request performance regarding **low latency** and **high throughput**
@@ -47,23 +42,19 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
   to explore the API
 - provide a [**GraphQL API**](https://graphql.org/) and
   host [**GraphiQL**](https://github.com/graphql/graphiql) to explore the API
-- [**JSON Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#fliox-hub) is designed as a library - not a framework.  
+- [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#-hub) is designed as a library - not a framework.  
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
 
 ## Demo files
 
-| file                           | description                                                     |
-|--------------------------------|-----------------------------------------------------------------|
-| [DemoClient.cs](DemoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
-| [Models.cs](Models.cs)         | contain entity types & command models (DTO's)                   |
+| file                                  | description                                                     |
+|---------------------------------------|-----------------------------------------------------------------|
+| [TodoClient.cs](Client/TodoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
 
 
 ## DemoHub files
 
-| file                                          | description                                                                     |
-|-----------------------------------------------|---------------------------------------------------------------------------------|
-| [FakeUtils.cs](../Hub/FakeUtils.cs)           | utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records      |
-| [MessageHandler.cs](../Hub/MessageHandler.cs) | implement DemoHub API (database commands) by utilizing **DemoClient** instances |
-| [Program.cs](../Hub/Program.cs)               | bootstrapping & configuration of host                                           |
-| [Startup.cs](../Hub/Startup.cs)               | **ASP.NET Core** configuration and host integration                             |
+| file                            | description                           |
+|---------------------------------|---------------------------------------|
+| [Program.cs](Hub/Program.cs)    | bootstrapping & configuration of host |
