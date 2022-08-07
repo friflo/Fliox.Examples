@@ -3,9 +3,6 @@
 # ![logo](../.docs/images/Json-Fliox.svg)     **Fliox DemoHub**      ![SPLASH](../.docs/images/paint-splatter.svg)
 
 
-
-## General
-
 The Fliox **DemoHub** is a Web server application to demonstrate the features of the
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-hub) **.NET** library.
 
@@ -50,8 +47,9 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 - [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#-hub) is designed as a library - not a framework.  
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
+## Folders
 
-### Client files
+### `Client`
 
 | file                                  | description                                                     |
 |---------------------------------------|-----------------------------------------------------------------|
@@ -59,7 +57,7 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 | [Models.cs](Client/Models.cs)         | contain entity types & command models (DTO's)                   |
 
 
-### Hub files
+### `Hub`
 
 | file                                       | description                                                                     |
 |--------------------------------------------|---------------------------------------------------------------------------------|

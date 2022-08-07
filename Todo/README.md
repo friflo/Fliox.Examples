@@ -2,9 +2,6 @@
 # ![logo](../.docs/images/Json-Fliox.svg)     **Fliox TodoHub**      ![SPLASH](../.docs/images/paint-splatter.svg)
 
 
-
-## General
-
 The **TodoHub** is a Web server application to demonstrate the features of the
 [**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-hub) **.NET** library.
 
@@ -45,15 +42,16 @@ The main features of a [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fli
 - [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#-hub) is designed as a library - not a framework.  
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
+## Folders
 
-### Client files
+### `Client`
 
 | file                                  | description                                                     |
 |---------------------------------------|-----------------------------------------------------------------|
 | [TodoClient.cs](Client/TodoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
 
 
-### Hub files
+### `Hub`
 
 | file                            | description                           |
 |---------------------------------|---------------------------------------|
