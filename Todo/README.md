@@ -46,14 +46,14 @@ The main features of a [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fli
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
 
-## Demo files
+### Client files
 
 | file                                  | description                                                     |
 |---------------------------------------|-----------------------------------------------------------------|
 | [TodoClient.cs](Client/TodoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
 
 
-## DemoHub files
+### Hub files
 
 | file                            | description                           |
 |---------------------------------|---------------------------------------|

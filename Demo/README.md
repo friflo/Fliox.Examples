@@ -51,7 +51,7 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
 
-## Demo files
+### Client files
 
 | file                                  | description                                                     |
 |---------------------------------------|-----------------------------------------------------------------|
@@ -59,7 +59,7 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 | [Models.cs](Client/Models.cs)         | contain entity types & command models (DTO's)                   |
 
 
-## DemoHub files
+### Hub files
 
 | file                                       | description                                                                     |
 |--------------------------------------------|---------------------------------------------------------------------------------|
