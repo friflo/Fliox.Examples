@@ -21,7 +21,9 @@ RUN dotnet publish DemoHub.csproj -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 
 # copy test databases: main_db & user_db
-COPY --from=build /app/Demo/Test/DB /Test/DB
+COPY --from=build /app/Demo/Test/DB         /Test/DB
+
+COPY Demo/Hub/bin/Release/net6.0/*.xml      /app/
 
 WORKDIR /app 
 #
