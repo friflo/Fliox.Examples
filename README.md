@@ -141,6 +141,14 @@ the server will start with logs like
 
 ![server logs](.docs/images/server-log.svg)
 
+
+when using Gitpod: Click **Make Public**  
+<img src=".docs/images/gitpod-make-public.png" width="490" height="91" align="top"/>
+
+
+
+
+
 open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
 
 <br/>
