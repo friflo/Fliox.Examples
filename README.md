@@ -149,9 +149,7 @@ when using Gitpod:
 
 <br/>
 
-
-
-open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
+Otherwise open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
 
 <br/>
 
