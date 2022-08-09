@@ -142,10 +142,12 @@ the server will start with logs like
 ![server logs](.docs/images/server-log.svg)
 
 
-when using Gitpod: Click **Make Public**  
+when using Gitpod:
+- Click **Make Public**  
+- Click **`http://localhost:8010/fliox/`**  in Terminal  
 <img src=".docs/images/gitpod-make-public.png" width="490" height="91" align="top"/>
 
-
+<br/>
 
 
 
