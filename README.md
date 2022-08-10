@@ -52,7 +52,7 @@ The **API**'s used by the examples are available at [**fliox-docs API Reference*
 Build, Test and Run instructions described at [🔧 Build](#-build)
 
 ## **Demo**
-📄   [README.md](Demo/README.md)
+📄   [README.md](Demo)
 
 The Demo example contains a *common* **Client**, a *common* **Hub** and **unit tests**.  
 
@@ -71,7 +71,7 @@ Try out the online example [**DemoHub on AWS**](http://ec2-174-129-178-18.comput
 
 
 ## **Todo**
-📄   [README.md](Todo/README.md)
+📄   [README.md](Todo)
 
 The Todo example contains a *minimal* **Client**, a *minimal* **Hub** and **unit tests**.  
 
