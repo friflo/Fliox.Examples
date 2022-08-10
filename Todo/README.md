@@ -42,17 +42,14 @@ The main features of a [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fli
 - [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#-hub) is designed as a library - not a framework.  
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
-## Folders
-
-### `Client`
-
-| file                                  | description                                                     |
-|---------------------------------------|-----------------------------------------------------------------|
-| [TodoClient.cs](Client/TodoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
-
-
-### `Hub`
-
-| file                            | description                           |
-|---------------------------------|---------------------------------------|
-| [Program.cs](Hub/Program.cs)    | bootstrapping & configuration of host |
+## Files
+```
+📂 Client
+┣ 📄 TodoClient.cs      1. is a database client
+┃                       2. is a database schema for a Hub
+📂 Hub
+┣ 📄 Program.cs         bootstrapping & configuration of host   > dotnet run
+📂 Test
+┣ 📄 DemoTests.cs       unit tests                              > dotnet test
+┗ 📄 Trial.cs           small samples                           > dotnet run
+```

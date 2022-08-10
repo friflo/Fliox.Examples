@@ -47,22 +47,19 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 - [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#-hub) is designed as a library - not a framework.  
   This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
   
-## Folders
-
-### `Client`
-
-| file                                  | description                                                     |
-|---------------------------------------|-----------------------------------------------------------------|
-| [DemoClient.cs](Client/DemoClient.cs) | 1. is a database client <br/> 2. is a database schema for a Hub |
-| [Models.cs](Client/Models.cs)         | contain entity types & command models (DTO's)                   |
-
-
-### `Hub`
-
-| file                                       | description                                                                     |
-|--------------------------------------------|---------------------------------------------------------------------------------|
-| [FakeUtils.cs](Hub/FakeUtils.cs)           | utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records      |
-| [MessageHandler.cs](Hub/MessageHandler.cs) | implement DemoHub API (database commands) by utilizing **DemoClient** instances |
-| [Program.cs](Hub/Program.cs)               | bootstrapping & configuration of host                                           |
-| [Startup.cs](Hub/Startup.cs)               | **ASP.NET Core** 3, 3.1, 5 configuration and host integration                   |
-| [StartupAsp6.cs](Hub/StartupAsp6.cs)       | **ASP.NET Core** 6 configuration and host integration                           |
+## Files
+```
+📂 Client
+┣ 📄 DemoClient.cs      1. is a database client
+┃                       2. is a database schema for a Hub
+┣ 📄 Models.cs          contain entity types & command models (DTO's)
+📂 Hub
+┣ 📄 FakeUtils.cs       utilize https://github.com/bchavez/Bogus to generate fake records
+┣ 📄 MessageHandler.cs  implement DemoHub API (database commands) by utilizing DemoClient instances
+┣ 📄 Program.cs         bootstrapping & configuration of host   > dotnet run
+┣ 📄 Startup.cs         ASP.NET Core 3, 3.1, 5 configuration and host integration
+┣ 📄 StartupAsp6.cs     ASP.NET Core 6 configuration and host integration
+📂 Test
+┣ 📄 DemoTests.cs       unit tests                              > dotnet test
+┗ 📄 Trial.cs           small samples                           > dotnet run
+```
