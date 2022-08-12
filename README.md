@@ -100,10 +100,11 @@ It can be used with following IDE's:
 
 
 Or use **Gitpod** to build and run the server using VSCode in the browser without installing anything.  
-Workspace available in 30 sec.   <a href="https://gitpod.io/#https://github.com/friflo/Fliox.Examples" target="_blank">
+Workspace available in 30 sec. Open  <a href="https://gitpod.io/#https://github.com/friflo/Fliox.Examples" target="_blank">
   <img src="https://img.shields.io/badge/Build%20with-Gitpod-908a85?logo=gitpod" alt="Build with Gitpod" align = "center"/>
-</a>   *when Finished open Terminal panel*
+</a>  in new tab. When Finished open Terminal panel.
 
+<br/>
 
 clone repository and open its directory - leave out this step when using Gitpod.
 ```cmd
