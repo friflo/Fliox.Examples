@@ -8,7 +8,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Demos.sln",
+                "${workspaceFolder}/Examples.sln",
                 "/property:GenerateFullPaths=true"
             ],
             "problemMatcher": "$msCompile"
@@ -20,7 +20,7 @@
             "type": "process",
             "args": [
                 "test",
-                "${workspaceFolder}/Demos.sln",
+                "${workspaceFolder}/Examples.sln",
                 "-l",
                 "console;verbosity=detailed"
             ],
@@ -32,7 +32,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Demos.sln",
+                "${workspaceFolder}/Examples.sln",
                 "/property:GenerateFullPaths=true"
             ],
             "problemMatcher": "$msCompile"
@@ -43,7 +43,7 @@
             "type": "process",
             "args": [
                 "clean",
-                "${workspaceFolder}/Demos.sln"
+                "${workspaceFolder}/Examples.sln"
             ],
             "problemMatcher": "$msCompile"
         },
