@@ -16,8 +16,6 @@ This enables running the server **without** any configuration or installation of
 **TL;DR**  
 [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*
 
-<iframe src="http://ec2-174-129-178-18.compute-1.amazonaws.com/fliox/" border="0" style="border: 0;" title="DemoHub" width="800" height="450"></iframe>
-
 
 ## DemoClient
 
