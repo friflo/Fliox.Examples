@@ -1,7 +1,13 @@
 {
     "id": "all-allow",
     "description": "Allow unrestricted access to all databases",
-    "rights": [
-        { "type": "allow", "database": "*" }
-    ]
+    "taskRights": [
+        {
+            "type": "dbFull",
+            "database": "*"
+        }
+    ],
+    "hubRights": {
+        "queueEvents": true
+    }
 }

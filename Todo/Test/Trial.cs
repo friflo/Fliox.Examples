@@ -30,7 +30,7 @@ namespace TodoTest {
                 Console.WriteLine($"id: {job.id}, title: {job.title}, completed: {job.completed}");
             }
         }
-            
+        
         // after calling this method open: 'Hub Explorer > main_db > articles'
         // changing records in 'articles' trigger the subscription handler in this method.  
         private static async Task SubscribeChangesAndMessages()
