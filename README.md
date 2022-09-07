@@ -158,6 +158,9 @@ dotnet run
 --- jobs:
 id: 1, title: buy milk, completed: False
 id: 2, title: buy cheese, completed: True
+
+ wait for events ... (exit with: CTRL + C)
+ note: generate events by clicking 'Save' on a record in the Hub Explorer
 ```
 It will execute the client methods used in `Trial.Main()`
 
