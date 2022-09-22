@@ -200,7 +200,7 @@ Use the container view to show, edit and query entities.
     - selecting an exiting one
     - change its id
     - click **Save**
-- Execute a container query using a **LINQ filter expression** `o.completed != false`  
+- Execute a container query using a **LINQ filter expression**    `o => o.completed != false`  
   and clicking **Apply filter**
 - Remove the query filter by clicking on the red ❌ on the top left in the Explorer
 - **Select All / None** entities in the container to edit them as JSON
