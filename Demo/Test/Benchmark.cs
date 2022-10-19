@@ -46,8 +46,18 @@ clients   rate frames connected  average     50    90    95    96    97    98   
             
             var rate    = 50; // tick rate
             var frames  = 150;
-            Console.WriteLine("clients = CCU - Concurrently Connected Users, rate = tick rate, frames = number of messages send / received events");
-            Console.WriteLine();
+            Console.WriteLine(@"
+--- Benchmark ---
+1. one client send a message to host
+2. the host send this message to all subscribed clients
+3. subscribed clients receive message event
+
+All latencies from 1 to 3 are recorded and percentiles are calculated.
+
+clients = CCU - Concurrently Connected Users
+rate    = tick rate
+frames  = number of messages send / received events
+");
             Console.WriteLine("            Hz               ms       ms     latency ms percentiles                              ms   ms/s  kb/s");
             Console.WriteLine("clients   rate frames connected  average     50    90    95    96    97    98    99   100  duration   main alloc");
             
@@ -112,7 +122,8 @@ clients   rate frames connected  average     50    90    95    96    97    98   
                 var bytesStart  = GC.GetAllocatedBytesForCurrentThread();
                 var testMessage = new TestMessage { start = DateTime.Now.Ticks, payload = payload};
                 sender.SendMessage("test", testMessage);   // message is published to all clients
-                var noAwait = sender.SyncTasks();
+                await sender.SyncTasks();
+                
                 sendTicks  += DateTime.Now.Ticks - msgStart;
                 bytes      += GC.GetAllocatedBytesForCurrentThread() - bytesStart;
                 
