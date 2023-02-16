@@ -61,7 +61,7 @@ All **Todo/Hub** features + **ASP.NET Core** integration, **GraphQL** API, monit
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers.
 
 Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
-Try out the online example [**DemoHub on AWS**](http://ec2-174-129-178-18.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
+Try out the online example [**DemoHub on AWS**](http://ec2-18-215-176-108.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
 
 |              | Client                       | Hub                                                                    |
 |--------------|------------------------------|------------------------------------------------------------------------|
