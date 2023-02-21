@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Demo;
 using Friflo.Json.Fliox.Hub.Client;
 using Friflo.Json.Fliox.Hub.Remote;
-using Friflo.Json.Fliox.Hub.Remote.Transport.Udp;
 
 // ReSharper disable UnusedVariable
 namespace DemoTest {
@@ -42,7 +41,7 @@ clients   rate frames connected  average     50    90    95    96    97    98   
     {
         internal static async Task PubSubLatency()
         {
-            var hub     = CreateClient();
+            var hub     = new WebSocketClientHub("main_db", "ws://localhost:8010/fliox/");
             var sender  = new DemoClient(hub) { UserId = "admin", Token = "admin" };
             
             var rate    = 50; // tick rate
@@ -61,11 +60,6 @@ frames  = number of messages send / received events
 ");
             Console.WriteLine("            Hz               ms       ms     latency ms percentiles                              ms   ms/s  kb/s");
             Console.WriteLine("clients   rate frames connected  average     50    90    95    96    97    98    99   100  duration   main alloc");
-            
-            for (int n = 0; n < 1; n++) {
-                if (n % 10 == 0) Console.WriteLine($"--- run {n}");
-                await PubSubLatencyCCU(sender,   1000,   rate, frames);
-            }
             
             await PubSubLatencyCCU(sender,     2,   rate, frames);
             await PubSubLatencyCCU(sender,     2,   rate, frames);
@@ -166,16 +160,7 @@ frames  = number of messages send / received events
                 var task = context.client.SyncTasks();
                 tasks.Add(task);
             }
-
-            if (LogUnsubscribe) {
-                for (int n = 0; n < tasks.Count; n++) {
-                    Console.Write($"unsubscribe {n} ... ");
-                    await tasks[n];
-                    Console.WriteLine("done");
-                }
-            } else {
             await Task.WhenAll(tasks);
-            }
 
             foreach (var context in contexts) {
                 context.client.Dispose();
@@ -183,8 +168,6 @@ frames  = number of messages send / received events
                 context.hub.Dispose();
             }
         }
-        
-        private static readonly bool LogUnsubscribe = false;
         
         private static List<double> GetPercentiles(List<double> values, int count) {
             var sorted = values.OrderBy(s => s).ToList();
@@ -201,20 +184,9 @@ frames  = number of messages send / received events
             return percentiles;
         }
         
-        private static readonly string SocketType = "ws";
-        
-        private static SocketClientHub CreateClient() {
-            switch (SocketType) {
-                case "ws":          return new WebSocketClientHub    ("main_db", "ws://127.0.0.1:8010/fliox/");
-                case "udp":         return new UdpSocketClientHub    ("main_db", "127.0.0.1:5000"); 
-                case "udp-sync":    return new UdpSocketSyncClientHub("main_db", "127.0.0.1:5000");
-                default:            throw new ArgumentException($"invalid SocketType: {SocketType}");
-            }
-        }
-        
         private static async Task<BenchmarkContext> ConnectClient(int frames)
         {
-            var hub     = CreateClient();
+            var hub     = new WebSocketClientHub("main_db", "ws://localhost:8010/fliox/");
             var client  = new DemoClient(hub) { UserId = "admin", Token = "admin" };
             var bc      = new BenchmarkContext { hub = hub, client = client, frames = frames };
             
@@ -235,7 +207,7 @@ frames  = number of messages send / received events
     
     internal class BenchmarkContext
     {
-        internal            SocketClientHub         hub;
+        internal            WebSocketClientHub      hub;
         internal            FlioxClient             client;
         internal readonly   List<double>            latencies = new List<double>(); // ms
         internal readonly   TaskCompletionSource    tcs = new TaskCompletionSource();

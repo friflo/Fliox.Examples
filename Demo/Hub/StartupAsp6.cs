@@ -32,12 +32,11 @@ public static class StartupAsp6
         app.MapGet("hello/", () => "Hello World");
         // add redirect only to enable using http://localhost:8010 for debugging  
         app.MapGet("/", async context => {
-            context.Response.Redirect(httpHost.baseRoute, false);
+            context.Response.Redirect(httpHost.endpoint, false);
             await context.Response.WriteAsync("redirect");
         });
         app.Map("/fliox/{*path}", async context =>  {
-            var requestContext = await context.ExecuteFlioxRequest(httpHost).ConfigureAwait(false);
-            await context.WriteFlioxResponse(requestContext).ConfigureAwait(false);
+            await context.HandleFlioxRequest(httpHost).ConfigureAwait(false);
         });
         
         // use app.Start() / app.WaitForShutdown() instead of app.Run() to get startPage
