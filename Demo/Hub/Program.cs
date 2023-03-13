@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Threading.Tasks;
 using Demo;
 using Friflo.Json.Fliox.Hub.DB.Cluster;
 using Friflo.Json.Fliox.Hub.DB.Monitor;
@@ -8,7 +9,6 @@ using Friflo.Json.Fliox.Hub.GraphQL;
 using Friflo.Json.Fliox.Hub.Host;
 using Friflo.Json.Fliox.Hub.Host.Event;
 using Friflo.Json.Fliox.Hub.Remote;
-using Friflo.Json.Fliox.Schema.Native;
 
 namespace DemoHub
 {
@@ -40,8 +40,7 @@ namespace DemoHub
         /// </summary>
         internal static HttpHost CreateHttpHost()
         {
-            var typeSchema          = NativeTypeSchema.Create(typeof(DemoClient)); // optional - create TypeSchema from Type
-            var databaseSchema      = new DatabaseSchema(typeSchema);
+            var databaseSchema      = new DatabaseSchema(typeof(DemoClient));           // optional - create TypeSchema from Type
             var database            = CreateDatabase(databaseSchema, new DemoService());
 
             var hub                 = new FlioxHub(database);
@@ -60,8 +59,20 @@ namespace DemoHub
             var httpHost            = new HttpHost(hub, "/fliox/");
             httpHost.AddHandler      (new GraphQLHandler());
             httpHost.AddHandler      (new StaticFileHandler(HubExplorer.Path)); // optional - serve static web files of Hub Explorer
+            
+            // CreateWebRtcServer(httpHost).Wait();
             return httpHost;
         }
+        
+        /* private static async Task CreateWebRtcServer(HttpHost httpHost) {
+            var rtcConfig = new SignalingConfig {
+                SignalingHost   = "ws://localhost:8011/fliox/",
+                User            = "admin", Token = "admin",
+                WebRtcConfig    = new WebRtcConfig { IceServerUrls = new [] { "stun:stun.sipsorcery.com" } },
+            };
+            var rtcServer = new RtcServer(rtcConfig);
+            await rtcServer.AddHost("abc", httpHost);
+        } */
         
         private static readonly bool UseMemoryDbClone = true;
         

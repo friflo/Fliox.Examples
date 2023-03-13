@@ -174,9 +174,9 @@ frames  = number of messages send / received events
                     Console.WriteLine("done");
                 }
             } else {
-            await Task.WhenAll(tasks);
+                await Task.WhenAll(tasks);
             }
-
+            
             foreach (var context in contexts) {
                 context.client.Dispose();
                 await context.hub.Close();
@@ -208,6 +208,7 @@ frames  = number of messages send / received events
                 case "ws":          return new WebSocketClientHub    ("main_db", "ws://127.0.0.1:8010/fliox/");
                 case "udp":         return new UdpSocketClientHub    ("main_db", "127.0.0.1:5000"); 
                 case "udp-sync":    return new UdpSocketSyncClientHub("main_db", "127.0.0.1:5000");
+            //  case "webrtc":      return new RtcSocketClientHub    ("main_db", "ws://127.0.0.1:8011/fliox/?host=abc", new WebRtcConfig { IceServerUrls = new [] { "stun:stun.sipsorcery.com" } });
                 default:            throw new ArgumentException($"invalid SocketType: {SocketType}");
             }
         }

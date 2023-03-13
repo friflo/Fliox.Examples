@@ -3,7 +3,6 @@ using Friflo.Json.Fliox.Hub.Explorer;
 using Friflo.Json.Fliox.Hub.Host;
 using Friflo.Json.Fliox.Hub.Host.Event;
 using Friflo.Json.Fliox.Hub.Remote;
-using Friflo.Json.Fliox.Schema.Native;
 using Todo;
 
 namespace TodoHub
@@ -20,8 +19,7 @@ namespace TodoHub
         private static HttpHost CreateHttpHost()
         {
             var database        = new FileDatabase("main_db", "../Test/DB/main_db"); // uses records stored in 'main_db/jobs' folder
-            var typeSchema      = NativeTypeSchema.Create(typeof(TodoClient));
-            database.Schema     = new DatabaseSchema(typeSchema);
+            database.Schema     = new DatabaseSchema(typeof(TodoClient));
 
             var hub             = new FlioxHub(database);
             hub.Info.projectName= "TodoHub";
