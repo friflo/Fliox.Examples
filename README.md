@@ -25,11 +25,13 @@ Published project on GitHub 2022-08
 - [Examples](#-examples)
     - [Demo](#demo)
     - [Todo](#todo)
+    - [SchemaValidation](#schemavalidation)
 - [Build](#-build)
 - [Walkthrough](#-walkthrough)
 - [Credits](#-credits)
 
-<br/>
+<br/><br/>
+
 
 # 🚀 Examples
 
@@ -51,6 +53,9 @@ The **API**'s used by the examples are available at [**fliox-docs API Reference*
 
 Build, Test and Run instructions described at [🔧 Build](#-build)
 
+<br/><br/>
+
+
 ## **Demo**
 📄   [README.md](Demo)
 
@@ -68,6 +73,7 @@ Try out the online example [**DemoHub on AWS**](http://ec2-18-215-176-108.comput
 | C#           | 2 files - LOC 130            | 4 files - LOC bootstrap 80, ASP.NET Core 70, domain examples 280       |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 7 dlls 900 KB  **GraphQLParser** 300kb  **Bogus** 2.4MB |
 
+<br/><br/>
 
 
 ## **Todo**
@@ -87,6 +93,52 @@ Use the Hub Explorer http://localhost:8010/fliox/ to check the features.
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 5 dlls 855 KB |
 
 <br/><br/>
+
+
+## **SchemaValidation**
+📁   [C# Project](./SchemaValidation/)
+
+### *JSON Schema validation*
+
+The example shows how to validate a **JSON** string with a given **schema**.  
+The input for `JsonValidator.Validate()` is the JSON string and the Type defining the schema - `Person` in the example below.  
+Requires nuget package [Friflo.Json.Fliox ](https://www.nuget.org/packages/Friflo.Json.Fliox/).
+
+```csharp
+    class Person
+    {
+                    public  int     age;
+        [Required]  public  string  name;
+    }
+    
+    public static class SchemaValidation
+    {
+        /// Validate JSON with a Schema
+        [Test]
+        public static void Run() {
+            var json = "{\"age\":42,\"name\":\"Peter\"}";
+            var success = JsonValidator.Validate(json, typeof(Person), out var error);
+            Assert.IsTrue(success);
+        }
+    }
+```
+
+### *Code generation*
+The input for code generation is the type defining the schema - `Person` in the example below.  
+
+```csharp
+    /// Generate types for: C#, GraphQL, HTML, JSON Schema, Kotlin, Markdown and Typescript in folder: ./schema
+    public static void GenerateSchemaModels() {
+        var schemaModels = SchemaModel.GenerateSchemaModels(typeof(Person));
+        foreach (var schemaModel in schemaModels) {
+            var folder = $"./schema/{schemaModel.type}";
+            schemaModel.WriteFiles(folder);
+        }
+    }
+```
+
+<br/><br/>
+
 
 # 🔧 Build
 
