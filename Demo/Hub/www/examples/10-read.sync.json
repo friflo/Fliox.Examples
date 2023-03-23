@@ -1,0 +1,11 @@
+{
+  "msg": "sync",
+  "tasks": [
+    {
+      "task": "read",
+      "cont": "articles",
+      "ids": [11, 21]
+    }
+  ],
+  "info": "read entities by their ids in the given container"
+}

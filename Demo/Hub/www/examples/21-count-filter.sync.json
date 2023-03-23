@@ -1,0 +1,14 @@
+{
+  "msg": "sync",
+  "tasks": [
+    {
+      "task": "aggregate",
+      "type": "count",
+      "cont": "articles",
+      "filter": "o => o.name == 'Smartphone'"
+    }
+  ],
+  "info": [
+    "count articles with filter: o => o.name == 'Smartphone'"
+  ]
+}

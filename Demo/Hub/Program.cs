@@ -18,7 +18,7 @@ namespace DemoHub
         public static void Main(string[] args)
         {
             if (args.Contains("HttpListener")) {
-                var httpHost = CreateHttpHost();
+                var httpHost = CreateHttpHost().Result;
                 HttpServer.RunHost("http://+:8010/", httpHost);
                 return;
             }
@@ -38,7 +38,7 @@ namespace DemoHub
         /// <i>Note</i>: All extension databases added by <see cref="FlioxHub.AddExtensionDB"/> could be exposed by an
         /// additional <see cref="HttpHost"/> instance only accessible from Intranet as they contains sensitive data.
         /// </summary>
-        internal static HttpHost CreateHttpHost()
+        internal static async Task<HttpHost> CreateHttpHost()
         {
             var databaseSchema      = new DatabaseSchema(typeof(DemoClient));           // optional - create TypeSchema from Type
             var database            = CreateDatabase(databaseSchema, new DemoService());
@@ -52,14 +52,18 @@ namespace DemoHub
             hub.EventDispatcher     = new EventDispatcher(EventDispatching.QueueSend);   // optional - enables Pub-Sub (sending events for subscriptions)
             
             var userDB              = new FileDatabase("user_db", "../Test/DB/user_db", new UserDBService()) { Pretty = false };
-            hub.Authenticator       = new UserAuthenticator(userDB) // optional - otherwise all tasks are authorized
-                .SubscribeUserDbChanges(hub.EventDispatcher);       // optional - apply user_db changes instantaneously
+            var authenticator       = new UserAuthenticator(userDB);
+            await authenticator.SetAdminPermissions();                                  // optional - enable Hub access with user/token: admin/admin
+            await authenticator.SetClusterPermissions("cluster", Users.All);
+            await authenticator.SubscribeUserDbChanges(hub.EventDispatcher);            // optional - apply user_db changes instantaneously
             hub.AddExtensionDB(userDB);                             // optional - expose user_db as extension database
+            hub.Authenticator       = authenticator;                                    // optional - otherwise all tasks are authorized
             
             var httpHost            = new HttpHost(hub, "/fliox/");
             httpHost.AddHandler      (new GraphQLHandler());
             httpHost.AddHandler      (new StaticFileHandler(HubExplorer.Path)); // optional - serve static web files of Hub Explorer
-            
+            // httpHost.AddHandler      (new StaticFileHandler("www", typeof(Program)));
+            httpHost.AddHandler      (new StaticFileHandler("www") { CacheControl = null });
             // CreateWebRtcServer(httpHost).Wait();
             return httpHost;
         }

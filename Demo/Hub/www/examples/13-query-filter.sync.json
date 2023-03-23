@@ -1,0 +1,13 @@
+{
+  "msg": "sync",
+  "tasks": [
+    {
+      "task": "query",
+      "cont": "articles",
+      "filter": "o => o.name == 'Smartphone'"
+    }
+  ],
+  "info": [
+    "query articles with filter: o => o.name == 'Smartphone'"
+  ]
+}
