@@ -22,7 +22,7 @@
     </ItemGroup>
     
     <ItemGroup>
-        <PackageReference Include="Friflo.Json.Fliox" Version="0.22.0" />
+        <PackageReference Include="Friflo.Json.Fliox" Version="0.23.0" />
     </ItemGroup>
 	
 </Project>
