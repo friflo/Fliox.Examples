@@ -56,7 +56,7 @@ namespace DemoHub
             await authenticator.SetAdminPermissions();                                  // optional - enable Hub access with user/token: admin/admin
             await authenticator.SetClusterPermissions("cluster", Users.All);
             await authenticator.SubscribeUserDbChanges(hub.EventDispatcher);            // optional - apply user_db changes instantaneously
-            hub.AddExtensionDB(userDB);                             // optional - expose user_db as extension database
+            hub.AddExtensionDB(userDB);                                                 // optional - expose user_db as extension database
             hub.Authenticator       = authenticator;                                    // optional - otherwise all tasks are authorized
             
             var httpHost            = new HttpHost(hub, "/fliox/");
