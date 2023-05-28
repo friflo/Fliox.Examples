@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Demo;
+using Friflo.Json.Fliox;
 using Friflo.Json.Fliox.Hub.Host;
 
 // ReSharper disable UnusedMember.Local
@@ -16,34 +17,28 @@ namespace DemoHub
     /// A <see cref="DatabaseService"/> instance need to be passed when instantiating an <see cref="EntityDatabase"/>. <br/>
     /// E.g. a <see cref="MemoryDatabase"/>, a <see cref="FileDatabase"/>, ... <br/>
     /// <br/>
-    /// By calling <see cref="DatabaseService.AddMessageHandlers{TClass}"/> every method with the signature <br/>
-    /// (<see cref="Param{TParam}"/> param, <see cref="MessageContext"/> context) is added as a command handler. <br/>
-    /// Their method names need to match the command methods declared in the <see cref="DemoClient"/>.
+    /// Every method attributed with <see cref="CommandHandlerAttribute"/> handle command sent to the service<br/>
+    /// To handle messages a method need to be attributed with <see cref="MessageHandlerAttribute"/>.
     /// </summary>
     public class DemoService : DatabaseService
     {
         private static readonly FakeUtils FakeUtils = new FakeUtils();
-        
-        public DemoService()
-        {
-            AddMessageHandlers(this, "demo.");
-        }
         
         /// <summary>
         /// <b> Recommendation </b>: Used an async method to enable concurrent execution of demoStore.SyncTasks()/>.
         /// <br/>
         /// <b> Note </b>: Using a synchronous method would require to <see cref="Task.Wait()"/> on the SyncTasks() call
         /// resulting in worse performance as a worker thread is exclusively blocked by the while method execution.
-        /// </summary> 
-        private static async Task<Records> FakeRecords(Param<Fake> param, MessageContext command)
+        /// </summary>
+        [CommandHandler("demo.FakeRecords")]
+        private static async Task<Result<Records>> FakeRecords(Param<Fake> param, MessageContext context)
         {
-            var client          = new DemoClient(command.Hub);
-            client.UserInfo     = command.UserInfo;
+            var client          = new DemoClient(context.Hub);
+            client.UserInfo     = context.UserInfo;
             client.WritePretty  = true;
             
             if (!param.GetValidate(out var fake, out var error)) {
-                command.ValidationError(error);
-                return null;
+                return Result.ValidationError(error);
             }
             var result = FakeUtils.CreateFakes(fake);
             
@@ -66,14 +61,14 @@ namespace DemoHub
             return result;
         }
 
-        private static async Task<Counts> CountLatest(Param<int?> param, MessageContext command)
+        [CommandHandler("demo.CountLatest")]
+        private static async Task<Result<Counts>> CountLatest(Param<int?> param, MessageContext context)
         {
-            var client      = new DemoClient(command.Hub);
-            client.UserInfo = command.UserInfo;
+            var client      = new DemoClient(context.Hub);
+            client.UserInfo = context.UserInfo;
             
             if (!param.GetValidate(out var duration, out var error)) {
-                command.ValidationError(error);
-                return null;
+                return Result.ValidationError(error);
             }
             
             var seconds         = duration ?? 60;
@@ -97,14 +92,14 @@ namespace DemoHub
             return result;
         }
         
-        private static async Task<Records> LatestRecords(Param<int?> param, MessageContext command)
+        [CommandHandler("demo.LatestRecords")]
+        private static async Task<Result<Records>> LatestRecords(Param<int?> param, MessageContext context)
         {
-            var client      = new DemoClient(command.Hub);
-            client.UserInfo = command.UserInfo;
+            var client      = new DemoClient(context.Hub);
+            client.UserInfo = context.UserInfo;
             
             if (!param.GetValidate(out var duration, out var error)) {
-                command.ValidationError(error);
-                return null;
+                return Result.ValidationError(error);
             }
             var seconds         = duration ?? 60;
             var from            = DateTime.Now.AddSeconds(-seconds);
@@ -135,12 +130,12 @@ namespace DemoHub
             return result;
         }
         
-        /// use synchronous handler only when no async methods need to be awaited  
-        private static double Add(Param<Operands> param, MessageContext command)
+        /// use synchronous handler only when no async methods need to be awaited
+        [CommandHandler("demo.Add")]
+        private static Result<double> Add(Param<Operands> param, MessageContext context)
         {
             if (!param.GetValidate(out var operands, out var error)) {
-                command.ValidationError(error);
-                return 0;
+                return Result.ValidationError(error);
             }
             if (operands == null)
                 return 0;

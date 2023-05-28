@@ -16,7 +16,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.25.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.26.0" />
     </ItemGroup>
 
     <ItemGroup>

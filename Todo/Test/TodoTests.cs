@@ -9,7 +9,8 @@ namespace TodoTest {
 
     public static class TodoTests
     {
-        private static readonly string DbPath = GetBasePath() + "Todo/Test/DB/main_db";
+        private static readonly string          DbPath = GetBasePath() + "Todo/Test/DB/main_db";
+        private static readonly DatabaseSchema  Schema = DatabaseSchema.Create<TodoClient>();
 
         /// <summary>create a <see cref="MemoryDatabase"/> clone for every client to avoid side effects by DB mutations</summary>
         private static FlioxHub CreateTodoHub()
@@ -27,7 +28,7 @@ namespace TodoTest {
         private static MemoryDatabase CreateMemoryDatabaseClone(string dbName, string srcDatabasePath, DatabaseService service = null)
         {
             var referenceDB = new FileDatabase("source_db", srcDatabasePath);
-            var cloneDB     = new MemoryDatabase(dbName, service);
+            var cloneDB     = new MemoryDatabase(dbName, service) { Schema = Schema };
             cloneDB.SeedDatabase(referenceDB).Wait();
             return cloneDB;
         }
@@ -61,18 +62,16 @@ namespace TodoTest {
         {
             var hub         = CreateTodoHub();
             var client      = new TodoClient(hub);
-            string cursor   = null;
+            var query       = client.jobs.QueryAll();
+            query.maxCount  = 1; // query with cursor
             var count       = 0;
             while (true) {
-                var jobs        = client.jobs.QueryAll();
-                jobs.maxCount   = 1;
-                jobs.cursor     = cursor;
                 await client.SyncTasks();
                 
-                count += jobs.Result.Count;
-                cursor = jobs.ResultCursor;
-                if (cursor == null)
+                count += query.Result.Count;
+                if (query.IsFinished)
                     break;
+                query = query.QueryNext();
             }
             AreEqual(2, count);
         }
