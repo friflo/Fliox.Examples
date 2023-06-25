@@ -31,10 +31,10 @@ namespace DemoTest {
             return Path.GetFullPath(baseDir);
         }
     
-        private static MemoryDatabase CreateMemoryDatabaseClone(string dbName, string srcDatabasePath, DatabaseService service = null)
+        private static MemoryDatabase CreateMemoryDatabaseClone(string dbName, string srcDatabasePath)
         {
             var referenceDB = new FileDatabase("source_db", srcDatabasePath);
-            var cloneDB     = new MemoryDatabase(dbName, Schema, service);
+            var cloneDB     = new MemoryDatabase(dbName, Schema);
             cloneDB.SeedDatabase(referenceDB).Wait();
             return cloneDB;
         }
@@ -145,7 +145,7 @@ namespace DemoTest {
         {
             var database        = new MemoryDatabase("test").AddCommands(new DemoCommands());
             var hub             = new FlioxHub(database);
-            hub.EventDispatcher = new EventDispatcher(EventDispatching.Send); // dispatch events directly to simplify test
+            hub.UsePubSub(EventDispatching.Send);    // dispatch events directly to simplify test
             
             // setup subscriber client
             var subClient       = new DemoClient(hub) { UserId = "admin", Token = "admin", ClientId = "sub-1" };
@@ -175,7 +175,7 @@ namespace DemoTest {
         {
             var database        = new MemoryDatabase("test").AddCommands(new DemoCommands());
             var hub             = new FlioxHub(database);
-            hub.EventDispatcher = new EventDispatcher(EventDispatching.Send); // dispatch events directly to simplify test
+            hub.UsePubSub(EventDispatching.Send);    // dispatch events directly to simplify test
             
             // setup subscriber client
             var subClient       = new DemoClient(hub) { UserId = "admin", Token = "admin", ClientId = "sub-2" };

@@ -1,25 +1,24 @@
 ﻿using System;
 using Friflo.Json.Fliox.Hub.AspNetCore;
+using Friflo.Json.Fliox.Hub.Remote;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using IServer = Microsoft.AspNetCore.Hosting.Server.IServer;
 
 namespace DemoHub;
 
 /// <summary>
-/// Bootstrapping of ASP.NET Core 6.0 and adding the Hub returned by <see cref="Program.CreateHttpHost"/>.
+/// Bootstrapping of ASP.NET Core 6.0 and adding a <see cref="HttpHost"/>.
 /// </summary> 
 public static class StartupAsp6
 {
-    public static void Run(string[] args)
+    public static void Run(string[] args, HttpHost httpHost)
     {
-        var httpHost    = Program.CreateHttpHost().Result;
-        
         var builder     = WebApplication.CreateBuilder(args);
         builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(8010));
         var app         = builder.Build();
@@ -39,7 +38,6 @@ public static class StartupAsp6
             var requestContext = await context.ExecuteFlioxRequest(httpHost).ConfigureAwait(false);
             await context.WriteFlioxResponse(requestContext).ConfigureAwait(false);
         });
-        
         // use app.Start() / app.WaitForShutdown() instead of app.Run() to get startPage
         app.Start();
         var addresses   = app.Services.GetRequiredService<IServer>().Features.Get<IServerAddressesFeature>()!.Addresses;
