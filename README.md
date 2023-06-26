@@ -38,8 +38,8 @@ Published project on GitHub 2022-08
 This project contains two examples with a different set of features. Their differences are listed at [🎨 Features](.docs/features.md).  
 The intention is to guide how to add a new or remove an existing features in an application.
 
-- [**Demo**](#demo)    *common* example  - LOC: 560
-- [**Todo**](#todo)    *minimal* example - LOC:  70
+- [**Demo**](#demo)    *common* example  - LOC: 500
+- [**Todo**](#todo)    *minimal* example - LOC:  60
 
 Each example contains three folders / C# projects
 
@@ -70,7 +70,7 @@ Try out the online example [**DemoHub on AWS**](http://ec2-18-215-176-108.comput
 
 |              | Client                       | Hub                                                                    |
 |--------------|------------------------------|------------------------------------------------------------------------|
-| C#           | 2 files - LOC 130            | 4 files - LOC bootstrap 80, ASP.NET Core 70, domain examples 280       |
+| C#           | 2 files - LOC 140            | 4 files - LOC Program 40, ASP.NET Core 35, domain logic 280            |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 7 dlls 900 KB  **GraphQLParser** 300kb  **Bogus** 2.4MB |
 
 <br/><br/>
@@ -89,7 +89,7 @@ Use the Hub Explorer http://localhost:8010/fliox/ to check the features.
 
 |              | Client                       | Hub                          |
 |--------------|------------------------------|------------------------------|
-| C#           | 1 file - LOC 30              | 1 file - LOC 40              |
+| C#           | 1 file - LOC 35              | 1 file - LOC 25              |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 5 dlls 855 KB |
 
 <br/><br/>
