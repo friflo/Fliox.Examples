@@ -36,6 +36,6 @@ internal  static class  Program
         httpHost.UseStaticFiles("www");            // optional - add www/example requests
         
         Startup.Run(args, httpHost); // ASP.NET Core 6
-        // HttpServer.RunHost("http://+:8010/", httpHost); 
+        // HttpServer.RunHost("http://+:8010/", httpHost);  // http://127.0.0.1:8010/fliox/
     }
 }
