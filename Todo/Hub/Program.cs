@@ -3,7 +3,6 @@ using Friflo.Json.Fliox;
 using Friflo.Json.Fliox.Hub.Explorer;
 using Friflo.Json.Fliox.Hub.Host;
 using Friflo.Json.Fliox.Hub.Remote;
-using Todo;
 
 namespace TodoHub;
 
@@ -21,7 +20,7 @@ internal static class  Program
         // --- create HttpHost
         var httpHost    = new HttpHost(hub, "/fliox/");
         httpHost.UseStaticFiles(HubExplorer.Path); // nuget: https://www.nuget.org/packages/Friflo.Json.Fliox.Hub.Explorer
-        HttpServer.RunHost("http://+:8010/", httpHost);
+        HttpServer.RunHost("http://localhost:5000/", httpHost); // http://localhost:5000/fliox/
     }
 }
 
