@@ -65,7 +65,7 @@ The Demo example contains a *common* **Client**, a *common* **Hub** and **unit t
 All **Todo/Hub** features + **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers.
 
-Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
+Use the Hub Explorer http://localhost:5000/fliox/ to check the features.  
 Try out the online example [**DemoHub on AWS**](http://ec2-18-215-176-108.compute-1.amazonaws.com/) - *EC2: t2-micro*, *us-east-1*  
 
 |              | Client                       | Hub                                                                    |
@@ -85,7 +85,7 @@ The Todo example contains a *minimal* **Client**, a *minimal* **Hub** and **unit
 [**Hub Explorer**](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub.Explorer/README.md),
 HttpListener hosting, **REST / OpenAPI**, **Batch API** & **database schema**.  
 
-Use the Hub Explorer http://localhost:8010/fliox/ to check the features.  
+Use the Hub Explorer http://localhost:5000/fliox/ to check the features.  
 
 |              | Client                       | Hub                          |
 |--------------|------------------------------|------------------------------|
@@ -198,12 +198,12 @@ the server will start with logs like
 
 when using Gitpod:
 - Click **Make Public**  
-- Click **`http://localhost:8010/fliox/`**  in Terminal  
+- Click **`http://localhost:5000/fliox/`**  in Terminal  
 <img src=".docs/images/gitpod-make-public.png" width="490" height="91" align="top"/>
 
 <br/>
 
-Otherwise open the **Hub Explorer** in your browser: http://localhost:8010/fliox/
+Otherwise open the **Hub Explorer** in your browser: http://localhost:5000/fliox/
 
 <br/>
 
@@ -228,7 +228,7 @@ It will execute the client methods used in `Trial.Main()`
 Start with the simple **Todo** example as it contains only 70 LOC.  
 Therefore execute the steps listed in [🔧 Build](./README.md#-build) section.
 
-After starting the TodoHub server open the Hub Explorer at http://localhost:8010/fliox/ in the browser.  
+After starting the TodoHub server open the Hub Explorer at http://localhost:5000/fliox/ in the browser.  
 
 <br/>
 

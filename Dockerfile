@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
-# EXPOSE 8010
-# ENV ASPNETCORE_URLS=http://+:8010
+# EXPOSE 5000
+# ENV ASPNETCORE_URLS=http://+:5000
 #
 # copy csproj and restore as distinct layers
 COPY *.sln .
@@ -32,7 +32,7 @@ ENTRYPOINT ["dotnet", "DemoHub.dll"]
 
 # --- usage
 # docker build -t demo-hub:latest .
-# docker run -it --rm -p 80:8010 demo-hub:latest
+# docker run -it --rm -p 80:5000 demo-hub:latest
 
 
  
