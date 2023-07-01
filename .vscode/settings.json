@@ -51,5 +51,15 @@
     },
     "omnisharp.enableImportCompletion": true,
     "markdown.preview.doubleClickToSwitchToEditor": false,
-    "markdown.preview.markEditorSelection": false
+    "markdown.preview.markEditorSelection": false,
+    // connection settings for: https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Fliox.Examples}/Todo/Hub/todo.sqlite3",
+            "name": "todo"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
