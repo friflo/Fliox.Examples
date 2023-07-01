@@ -3,6 +3,7 @@ bin/
 obj/
 
 .idea/
+*.sqlite3
 
 # .NET
 *.user
