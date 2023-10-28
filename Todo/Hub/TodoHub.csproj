@@ -16,8 +16,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.47.0" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.SQLite" Version="0.47.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.48.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.SQLite" Version="0.48.0" />
     </ItemGroup>
 
     <ItemGroup>

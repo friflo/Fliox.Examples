@@ -13,7 +13,7 @@ internal static class  Program
     {
         var schema      = DatabaseSchema.Create<TodoClient>();
         var database    = new SQLiteDatabase("todo_db", "Data Source=todo.sqlite3", schema);
-        await database.SetupDatabaseAsync().ConfigureAwait(false);
+        await database.SetupDatabaseAsync(); // for development: create database or update ist schema
         database.AddCommands(new TodoCommands());
         var hub         = new FlioxHub(database);
         hub.Info.Set ("TodoHub", "dev", "https://github.com/friflo/Fliox.Examples/tree/main/Todo", "rgb(0 171 145)"); // optional
@@ -35,10 +35,10 @@ public class TodoCommands : IServiceCommands
             return Result.Error(error);
         }
         var client  = new TodoClient(context.Hub); 
-        var jobs    = client.jobs.Query(job => job.completed == param.Value);
+        var jobs    = client.Jobs.Query(job => job.completed == param.Value);
         await client.SyncTasks();
 
-        client.jobs.DeleteRange(jobs.Result);
+        client.Jobs.DeleteRange(jobs.Result);
         await client.SyncTasks();
         
         return jobs.Result.Count;

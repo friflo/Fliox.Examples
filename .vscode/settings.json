@@ -40,16 +40,10 @@
         "upserts",
         "Walkthrough"
     ],
-    "csharp.unitTestDebuggingOptions": {
-        "logging": {
-            "moduleLoad": false
-        }
-    },
     "explorer.compactFolders": false,
     "[markdown]": {
         "editor.wordWrap": "off"
     },
-    "omnisharp.enableImportCompletion": true,
     "markdown.preview.doubleClickToSwitchToEditor": false,
     "markdown.preview.markEditorSelection": false,
     // connection settings for: https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools
@@ -61,5 +55,11 @@
             "name": "todo"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.unitTestDebuggingOptions": {
+        "logging": {
+            "moduleLoad": false
+        }
+    }
 }
