@@ -45,7 +45,7 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 - provide a [**GraphQL API**](https://graphql.org/) and
   host [**GraphiQL**](https://github.com/graphql/graphiql) to explore the API
 - [**Fliox Hub**](https://github.com/friflo/Friflo.Json.Fliox#-hub) is designed as a library - not a framework.  
-  This enable seamless integration in any **ASP.NET Core** application by a single route. e.g. `"/fliox/{*path}"`
+  This enable seamless integration in any **ASP.NET** application by a single route. e.g. `"/fliox/{*path}"`
   
 ## Files
 ```
@@ -57,7 +57,7 @@ The main features of a [**HTTP Fliox Hub**](https://github.com/friflo/Friflo.Jso
 ┣ 📄 DemoCommands.cs    implement DemoHub API (database commands) by utilizing DemoClient instances
 ┣ 📄 FakeUtils.cs       utilize https://github.com/bchavez/Bogus to generate fake records
 ┣ 📄 Program.cs         bootstrapping & configuration of host   > dotnet run
-┣ 📄 Startup.cs         ASP.NET Core 6 configuration and host integration
+┣ 📄 Startup.cs         ASP.NET 8 configuration and host integration
 📂 Test
 ┣ 📄 DemoTests.cs       unit tests                              > dotnet test
 ┗ 📄 Trial.cs           small samples                           > dotnet run

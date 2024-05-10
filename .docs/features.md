@@ -12,7 +12,7 @@ Search via your IDE or via GitHub. *GitHub > Search - keyboard shortcut* `s` or 
 | Unit of Work - support                    | ¹                     |    ✓   |    ✓   |       ✓       |
 | ORM LINQ                                  | ¹                     |   ✅   |   ✅   |       ✓       |
 | Hub - HttpListener integration            | `HttpListenerHost`    |   ✅   |   ✅   |               |
-| Hub - ASP.NET Core integration            | `ExecuteFlioxRequest` |   ✓    |   ✅   |               |
+| Hub - ASP.NET integration                 | `ExecuteFlioxRequest` |   ✓    |   ✅   |               |
 | Hub Explorer - require `cluster` DB       | `HubExplorer`         |   ✅   |   ✅   |               |
 | Batch API - HTTP & WebSocket              | ¹                     |   ✅   |   ✅   |               |
 | REST / OpenAPI                            | ¹                     |   ✅   |   ✅   | Swashbuckle ² |

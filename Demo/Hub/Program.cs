@@ -13,7 +13,7 @@ internal  static class  Program
 {
     /// <summary>
     /// Blueprint showing how to setup a <see cref="HttpHost"/> utilizing all features available
-    /// via HTTP and WebSockets with ASP.NET Core 6.0.
+    /// via HTTP and WebSockets with ASP.NET 8.0.
     /// See: https://github.com/friflo/Friflo.Json.Fliox/blob/main/Json/Fliox.Hub/Host/README.md#httphost
     /// </summary>
     public static async Task Main(string[] args)
@@ -35,7 +35,7 @@ internal  static class  Program
         httpHost.UseStaticFiles(HubExplorer.Path); // optional - HubExplorer nuget: https://www.nuget.org/packages/Friflo.Json.Fliox.Hub.Explorer
         httpHost.UseStaticFiles("www");            // optional - add www/example requests
         
-        Startup.Run(args, httpHost); // ASP.NET Core 6
+        Startup.Run(args, httpHost); // ASP.NET 8
         // HttpServer.RunHost("http://localhost:5000/", httpHost);  // http://localhost:5000/fliox/
     }
 }

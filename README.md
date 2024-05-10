@@ -62,7 +62,7 @@ Build, Test and Run instructions described at [🔧 Build](#-build)
 The Demo example contains a *common* **Client**, a *common* **Hub** and **unit tests**.  
 
 **Hub** features:  
-All **Todo/Hub** features + **ASP.NET Core** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
+All **Todo/Hub** features + **ASP.NET** integration, **GraphQL** API, monitoring, user authorization, **Pub-Sub**, container **relations** and custom **commands**.  
 It utilize [Bogus](https://github.com/bchavez/Bogus) to generate fake records in various containers.
 
 Use the Hub Explorer http://localhost:5000/fliox/ to check the features.  
@@ -70,7 +70,7 @@ Try out the online example [**DemoHub on AWS**](http://ec2-18-215-176-108.comput
 
 |              | Client                       | Hub                                                                    |
 |--------------|------------------------------|------------------------------------------------------------------------|
-| C#           | 2 files - LOC 140            | 4 files - LOC Program 40, ASP.NET Core 35, domain logic 280            |
+| C#           | 2 files - LOC 140            | 4 files - LOC Program 40, ASP.NET 35, domain logic 280            |
 | dependencies | **JSON Fliox** 4 dlls 850 KB | **JSON Fliox** 7 dlls 900 KB  **GraphQLParser** 300kb  **Bogus** 2.4MB |
 
 <br/><br/>
@@ -153,7 +153,7 @@ It can be used with following IDE's:
 [Rider](https://www.jetbrains.com/rider/) &
 [Visual Studio 2022](https://visualstudio.microsoft.com/vs/).
 
-*Note*: In order to build and run the examples the [**.NET 6.0 SDK**](https://dotnet.microsoft.com/en-us/download) is required.
+*Note*: In order to build and run the examples the [**.NET 8.0 SDK**](https://dotnet.microsoft.com/en-us/download) is required.
 
 
 Or use **Gitpod** to build and run the server using VSCode in the browser without installing anything.  
@@ -280,7 +280,7 @@ Use the **Test Explorer** of your **IDE** to execute and debug these tests.
 | ----------------------------------------------------------- | ----------- | -------------------------------------------------------------- |
 | [NUnit](https://nunit.org/)                                 | C#          | used for unit testing of the Examples                          |
 | [Bogus](https://github.com/bchavez/Bogus)                   | C#          | to create Fake data by the DemoHub                             |
-| [.NET platform](https://dotnet.microsoft.com/en-us/)        | C# .NET     | the platform providing compiler, runtime, IDE's & ASP.NET Core |
+| [.NET platform](https://dotnet.microsoft.com/en-us/)        | C# .NET     | the platform providing compiler, runtime, IDE's & ASP.NET      |
 | [Swagger](https://swagger.io/)                              | static JS   | a REST / OpenAPI UI linked  by the Hub Explorer                |
 | [GraphiQL](https://github.com/graphql/graphiql)             | static JS   | a GraphQL UI linked by the Hub Explorer                        |
 | [Mermaid](https://github.com/mermaid-js/mermaid)            | static JS   | class diagram for database schema linked by the Hub Explorer   |
