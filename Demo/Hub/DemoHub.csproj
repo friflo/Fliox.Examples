@@ -3,7 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <IsPackable>true</IsPackable>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <!-- disable automatic creation of: Properties/launchSettings.json -->
         <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
 
@@ -19,10 +19,10 @@
     </PropertyGroup>
 	
     <ItemGroup>
-      <PackageReference Include="Bogus" Version="34.0.2" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="0.48.0" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.48.0" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.GraphQL" Version="0.48.0" />
+      <PackageReference Include="Bogus" Version="35.5.1" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="1.0.1" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="1.0.1" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.GraphQL" Version="1.0.1" />
     </ItemGroup>
 	
     <ItemGroup>

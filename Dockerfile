@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 # EXPOSE 5000
 # ENV ASPNETCORE_URLS=http://+:5000
@@ -18,7 +18,7 @@ COPY Demo/Test/.                 ./Demo/Test/
 WORKDIR /app/Demo/Hub/
 RUN dotnet publish DemoHub.csproj -c Release -o out
 #
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 
 # copy test databases: main_db & user_db
 COPY --from=build /app/Demo/Test/DB         /Test/DB

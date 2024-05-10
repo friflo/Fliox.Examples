@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
 
         <LangVersion>10</LangVersion>
 		<GenerateProgramFile>false</GenerateProgramFile>
@@ -16,8 +16,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.48.0" />
-      <PackageReference Include="Friflo.Json.Fliox.Hub.SQLite" Version="0.48.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="1.0.1" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.SQLite" Version="1.0.1" />
     </ItemGroup>
 
     <ItemGroup>
